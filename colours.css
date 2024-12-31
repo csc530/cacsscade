@@ -1,0 +1,18 @@
+:root {
+    /* CSS HEX */
+    --bright-pink-crayola: #ef476fff;
+    --sunglow: #ffd166ff;
+    --emerald: #06d6a0ff;
+    --blue-ncs: #118ab2ff;
+    --midnight-green: #073b4cff;
+
+    /* CSS HSL */
+    --bright-pink-crayola: hsla(346, 84%, 61%, 1);
+    --sunglow: hsla(42, 100%, 70%, 1);
+    --emerald: hsla(164, 95%, 43%, 1);
+    --blue-ncs: hsla(195, 83%, 38%, 1);
+    --midnight-green: hsla(195, 83%, 16%, 1);
+
+
+    --mark: var(--sunglow);
+}

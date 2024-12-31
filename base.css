@@ -1,0 +1,105 @@
+/*
+███████       ██ ███    ██ ██████  ███████ ██   ██
+   ███        ██ ████   ██ ██   ██ ██       ██ ██
+  ███   █████ ██ ██ ██  ██ ██   ██ █████     ███
+ ███          ██ ██  ██ ██ ██   ██ ██       ██ ██
+███████       ██ ██   ████ ██████  ███████ ██   ██
+
+-1 = below
+0 = normal
+1 = above
+
++-1 increments
+
+*/
+
+/* font families
+    cursive = madelyn
+    fantasy =
+    monospace =
+    sans-serif =
+    serif =
+    impact =
+
+ */
+
+@import './table.css';
+@import './inputs.css';
+
+:root {
+    --border-radius: calc(24em/54);
+    --font-size: 1.2em;
+}
+
+@font-face {
+    font-family: "Madelyn";
+    src: url("fonts/Madelyn.otf");
+}
+
+@font-face {
+    font-family: "chill";
+    src: url("fonts/super-chill.otf");
+}
+
+@font-face {
+    font-family: "rude";
+    src: url("fonts/rude.otf");
+}
+
+@font-face {
+    font-family: "scribble";
+    src: url("fonts/scribble.otf");
+}
+
+@font-face {
+    font-family: "sugar";
+    src: url("fonts/sugar.otf");
+}
+
+@font-face {
+    font-family: "wonderland";
+    src: url("fonts/WONDERLANDPRO-Regular.ttf");
+}
+
+@font-face {
+    font-family: "corbert";
+    src: url("fonts/Corbert-Regular.ttf");
+}
+
+html {
+    font-family: corbert, Madelyn, Tahoma, Geneva, Verdana, system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: var(--font-size);
+    line-height: 1.5;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 1em;
+    border-radius: 25%;
+}
+
+q,
+p {
+    text-rendering: optimizeLegibility;
+}
+
+q {
+    font-style: oblique;
+}
+
+blockquote,
+q {
+    font-family: cursive;
+}
+
+* {
+    font-display: fallback;
+}
+
+/* resouerces
+
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/

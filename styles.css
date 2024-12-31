@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import url('colours.css');
+@import url('base.css');
+@import url('markup.css');
+
+body nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+body nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 10em;
+}
+
+a:hover {
+    /* make link bold */
+    font-weight: 550;
+    /* stronger underline */
+    text-decoration: underline wavy;
+}
+
+button {
+    padding-top: 2ch;
+    padding-bottom: 2cap;
+    padding-left: 5cqb;
+    padding-right: 5cm;
+    padding: auto;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+dialog[open]::backdrop {
+    cursor: pointer;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
+dialog {
+    /* background-color: white; */
+    border-radius: 5%;
+    padding: 5em;
+    position: fixed;
+    margin: auto;
+    z-index: 100;
+}
+
+
+ul {
+    list-style-type: symbols(cyclic "✓");
+    list-style-type: unordered;
+    list-style: symbols(cyclic "*" "†" "‡");
+}
+
+@counter-style unordered {
+    system: cyclic;
+    symbols: "●";
+    suffix: " ";
+}
+
+@counter-style unordered-emphasis {
+    system: cyclic;
+    symbols: "◆";
+    suffix: " ";
+}
+
+@counter-style unordered-strong {
+    system: cyclic;
+    symbols: "★";
+    suffix: " ";
+}
+
+@counter-style unordered-strong-emphasis {
+    system: cyclic;
+    symbols: "★◆";
+    suffix: " ";
+}
+
+@counter-style unordered-emphasis-strong {
+    system: cyclic;
+    symbols: "◆★";
+    suffix: " ";
+}
+
+@counter-style circled-alpha {
+    system: fixed;
+    symbols: Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ;
+    suffix: " ";
+}

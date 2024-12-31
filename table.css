@@ -1,0 +1,43 @@
+
+table {
+    z-index: 1;
+
+    table-layout: auto;
+    width: 100%;
+    border-style: outset;
+    border-radius: var(--border-radius);
+    border-color: inherit;
+    border-width: .325em;
+
+
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table caption {
+    caption-side: top;
+}
+
+thead,
+tfoot {
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+
+
+td {
+
+    border-width: .1em;
+    border-style: solid;
+    border-color: inherit;
+    empty-cells: show;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ff33cc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e495e4;
+}

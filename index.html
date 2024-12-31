@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet">
+        <title>Comprehensive HTML Tag Test</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Comprehensive HTML Tag Test</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="tacit.html">Tacit</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Text Elements</h2>
+                <p>This is a paragraph. <strong>Strong text</strong>, <em>emphasized text</em>, <mark>marked
+                        text</mark>, <small>small text</small>, <del>deleted text</del>, <ins>inserted text</ins>,
+                    <sub>subscript</sub>, <sup>superscript</sup>.
+                </p>
+                <p><abbr title="HyperText Markup Language">HTML</abbr> is the standard markup language for creating web
+                    pages.</p>
+                <blockquote cite="https://www.example.com">This is a blockquote.</blockquote>
+                <q cite="https://www.example.com">This is an inline quote.</q>
+                <address>
+                    Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+                    Visit us at:<br>
+                    Example.com<br>
+                    Box 564, Disneyland<br>
+                    USA
+                </address>
+                <time datetime="2024-09-07">September 7, 2024</time>
+            </section>
+            <section>
+                <h2>Lists</h2>
+                <ul>
+                    <li>Unordered list item 1</li>
+                    <li>Unordered list item 2</li>
+                    <li>Unordered list item 3</li>
+                </ul>
+                <ol>
+                    <li>Ordered list item 1</li>
+                    <li>Ordered list item 2</li>
+                    <li>Ordered list item 3</li>
+                </ol>
+                <dl>
+                    <dt>Definition Term 1</dt>
+                    <dd>Definition Description 1</dd>
+                    <dt>Definition Term 2</dt>
+                    <dd>Definition Description 2</dd>
+                </dl>
+            </section>
+            <section>
+                <h2>Tables</h2>
+                <table>
+                    <caption>Sample Table</caption>
+                    <thead>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>Data 2</td>
+                        </tr>
+                        <tr>
+                            <td>Data 3</td>
+                            <td>Data 4</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Footer 1</td>
+                            <td>Footer 2</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Forms</h2>
+                <form action="#">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <br>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                    <br>
+                    <label for="color">Color:</label>
+                    <input type="color" id="color" name="color">
+                    <br>
+                    <label for="range">Range:</label>
+                    <input type="range" id="range" name="range">
+                    <br>
+                    <label for="number">Number:</label>
+                    <input type="number" id="number" name="number">
+                    <br>
+                    <label for="search">Search:</label>
+                    <input type="search" id="search" name="search">
+                    <br>
+                    <label for="tel">Telephone:</label>
+                    <input type="tel" id="tel" name="tel">
+                    <br>
+                    <label for="url">URL:</label>
+                    <input type="url" id="url" name="url">
+                    <br>
+                    <label for="file">File:
+                    </label>
+                    <input type="file" id="file" name="file">
+                    <br>
+                    <label for="signature">Signature:
+                        <input type="text" id="signature" name="signature" required>
+                    </label>
+                    <fieldset>
+                        <legend>Choose your favorite programming language:</legend>
+                        <input type="radio" id="html" name="language" value="HTML">
+                        <label for="html">HTML</label>
+                        <br>
+                        <label for="css">CSS
+                            <input type="radio" id="css" name="language" value="CSS">
+                        </label>
+                        <br>
+                        <label for="javascript">JavaScript</label>
+                        <input type="radio" id="javascript" name="language" value="JavaScript">
+                    </fieldset>
+                    <br>
+                    <label for="continent">Choose your continent:</label>
+                    <select id="continent" name="continent">
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="africa">Africa</option>
+                        <optgroup label="Americas">
+                            <option value="north-america">North America</option>
+                            <option value="south-america">South America</option>
+                        </optgroup>
+                        <option value="australia">Australia</option>
+                        <option value="antarctica">Antarctica</option>
+                    </select>
+                    <br>
+
+                    <label for="faction">Choose your faction:
+                        <select id="faction" name="faction">
+                            <option value="alliance">Alliance</option>
+                            <option value="horde">Horde</option>
+                            <option value="scourge">Scourge</option>
+                            <option value="neutral">Neutral</option>
+                            <option value="outlaw">outlaw</option>
+                        </select>
+                    </label>
+                    <br>
+
+
+                    <label for="languages">Choose multiple programming languages:</label>
+                    <select id="languages" name="languages" multiple>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                    <br>
+
+                    <label for="traits">Traits:
+                        <select id="traits" name="traits" size="3" multiple>
+                            <option value="strong">Strong</option>
+                            <option value="fast">Fast</option>
+                            <option value="smart">Smart</option>
+                            <optgroup label="Superpowers">
+                                <option value="flight">Flight</option>
+                                <option value="invisibility">Invisibility</option>
+                                <option value="teleportation">Teleportation</option>
+                            </optgroup>
+                            <option value="quirky">Quirky</option>
+                        </select>
+                    </label>
+
+                    <label for="bio">Biography:</label>
+                    <textarea id="bio" name="bio"></textarea>
+                    <br>
+
+                    <label for="comments">Comments:
+                        <textarea id="comments" name="comments"></textarea>
+                    </label>
+                    <br>
+
+                    <input type="submit">
+                    <input type="reset">
+                </form>
+            </section>
+            <section>
+                <h2>Media</h2>
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+                <figure>
+                    <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+                    <figcaption>Figure caption</figcaption>
+                </figure>
+                <audio controls>
+                    <source src="audio-file.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <video controls>
+                    <source src="video-file.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+                <canvas id="myCanvas" width="200" height="100"></canvas>
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+                </svg>
+            </section>
+            <section>
+                <h2>Interactive Elements</h2>
+                <details>
+                    <summary>More Info</summary>
+                    <p>This is additional information.</p>
+                </details>
+                <button type="button" onclick="document.getElementById('dialog').showModal();">Click Me</button>
+                <dialog id="dialog" onclick="this.close();">
+                    <p>This is a dialog box.</p>
+                </dialog>
+                <meter value="0.6">60%</meter>
+                <progress value="70" max="100">70%</progress>
+            </section>
+        </main>
+        <footer>
+            <p>Footer content here.</p>
+        </footer>
+    </body>
+
+</html>
