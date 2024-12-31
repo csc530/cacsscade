@@ -25,6 +25,8 @@
 
 @import './table.css';
 @import './inputs.css';
+@import 'img.css';
+@import 'block.css';
 
 :root {
     --border-radius: calc(24em/54);
