@@ -1,0 +1,14 @@
+{
+  "name": "cascssade",
+  "devDependencies": {
+    "stylelint": "^16.13.0",
+    "stylelint-config-standard": "^37.0.0"
+  },
+  "scripts": {
+    "lint": "stylelint *.css",
+    "lint:compact": "csslint --formatter=compact *.css",
+    "fix": "stylelint *.css --fix strict",
+    "fix:chill": "csslint*.css --fix lax"
+  },
+  "type": "module"
+}
