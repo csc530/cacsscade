@@ -15,7 +15,9 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="tacit.html">Tacit</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a
+                            href="https://www.youtube.com/watch?si=CSmhfT-uFDCfadNz&v=YxvZdnS6aw4&feature=youtu.be">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -88,7 +90,7 @@
             </section>
             <section>
                 <h2>Forms</h2>
-                <form action="#">
+                <form  action="#">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name">
                     <br>
@@ -124,7 +126,7 @@
                     <input type="file" id="file" name="file">
                     <br>
                     <label for="signature">Signature:
-                        <input type="text" id="signature" name="signature" required>
+                        <input type="text" id="signature" name="signature">
                     </label>
                     <fieldset>
                         <legend>Choose your favorite programming language:</legend>
@@ -195,35 +197,74 @@
                         <textarea id="comments" name="comments"></textarea>
                     </label>
                     <br>
+                    <label><input type="checkbox" name="consent" id="consent" value="test">I agree with all possible
+                        terms and conditions</label>
 
+                    <p>I want to receive communications via:
+                        <br>
+                        <input type="checkbox" id="comm-email" name="communications" value="email">
+                        <label for="comm-email">Email</label>
+                        <br>
+                        <label for="phone">Phone</label>
+                        <input type="checkbox" id="phone" name="communications" value="phone">
+                        <br>
+                        <input type="checkbox" id="mail" name="communications" value="mail">
+                        <label for="mail">Mail</label>
+                        <br>
+                    </p>
+
+                    <label for="datetime-local">Appointment</label>
+                    <input type="datetime-local" id="datetime-local" name="datetime">
+                    <br>
+                    <label for="week">When would you like to go on vacation?</label>
+                    <input type="week" id="week" name="week">
+                    <br>
+                    <label for="month">When is your birthday?</label>
+                    <input type="month" id="month" name="month">
+                    <br>
+                    <label for="time">How early do you wake up?</label>
+                    <input type="time" id="time" name="time">
+                    <br>
+                    <label for="datetime">What date and time do you want to go?</label>
+                    <input disabled id="datetime" name="datetime">
+                    <input readonly value="Thank you for your submission.">
+                    <br>
+
+
+
+                    <input type="button" value="Click Me" onclick="alert('Hello World!')">
                     <input type="submit">
                     <input type="reset">
                 </form>
             </section>
             <section>
                 <h2>Media</h2>
-                <img src="https://via.placeholder.com/150" alt="Placeholder">
+                <img src="https://images.unsplash.com/photo-1478061653917-455ba7f4a541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Placeholder">
 
                 <figure>
-                    <img src="https://via.placeholder.com/150" alt="Placeholder">
+                    <img src="https://kaboompics.com/download/bcb65ca6f173aeddb1894d4d1ef8b1c9/original"
+                        alt="Placeholder">
                     <figcaption>Figure caption</figcaption>
                 </figure>
 
-                <audio controls>
-                    <source src="audio-file.mp3" type="audio/mpeg">
+                <audio autoplay muted controls src="https://www.soundboard.com/track/download/156453d=">
                     Your browser does not support the audio element.
                 </audio>
 
-                <video controls>
-                    <source src="video-file.mp4" type="video/mp4">
+                <video muted playsinline controls loop autoplay preload="auto"
+                    src="https://player.odycdn.com/v6/streams/069c2cd2da0dd4f81dbe6d63c1f915005babb4cd/120239.mp4"
+                    poster="https://i.vimeocdn.com/video/797311590-039c9525430c8c554e5100ab33b4a07912a658693437b898268ff6a73d0dc73a-d">
                     Your browser does not support the video element.
                 </video>
 
-                <iframe src="https://www.example.com" width="400" height="300" allowfullscreen title="Example Website"></iframe>
+                <iframe src="https://www.example.com" width="400" height="300" allowfullscreen
+                    title="Example Website"></iframe>
             </section>
 
             <section>
                 <h2>Interactive Elements</h2>
+                <button type="button">Cliquez</button>
                 <details>
                     <summary>More Info</summary>
                     <p>This is additional information.</p>
@@ -232,8 +273,21 @@
                 <dialog id="dialog" onclick="this.close();">
                     <p>This is a dialog box.</p>
                 </dialog>
-                <meter value="0.6">60%</meter>
-                <progress value="70" max="100">70%</progress>
+                <meter value="0" min="0" max="100" optimum="80" low="33" high="66">60%</meter>
+                <script>
+                    var meters = document.querySelectorAll('meter');
+                    meters.forEach(function(meter)
+                    {
+                        setInterval(function()
+                        {
+                            meter.value += 1;
+                            if(meter.value >= meter.max) {
+                                meter.value = meter.min;
+                            }
+                        }, 100);
+                    })
+                </script>
+                <progress max="100">70%</progress>
             </section>
         </main>
         <footer>

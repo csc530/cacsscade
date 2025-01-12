@@ -106,10 +106,12 @@ input[type="button"] {
     background-color: var(--shell);
 }
 
+button[type=submit],
 input[type="submit"] {
     background-color: var(--primary);
 }
 
+button[type=reset],
 input[type="reset"] {
     background-color: var(--error);
 }
