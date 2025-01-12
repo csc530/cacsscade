@@ -22,29 +22,56 @@ body nav ul {
     padding: 0;
     justify-content: space-evenly;
     width: 100%;
-    gap: 10em;
+    /* gap: 10em; */
 }
+
+body nav ul li {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: center;
+}
+
+button {
+    box-sizing: border-box;
+
+    max-width: 100%;
+
+    height: 100%;
+    max-height: 100vh;
+
+    padding: calc(var(--font-size)/1.5) calc(var(--font-size)*1.75);
+
+
+    border-style: solid;
+    border-width: 0.10em;
+    border-radius: 99999999px;
+    border-color: var(--black);
+
+    outline-style: none;
+    outline-color: transparent;
+    outline-width: 0;
+
+    background-color: var(--shell);
+}
+
+button:focus {
+    background-color: var(--shade);
+    border-color: var(--primary);
+}
+
+button:hover {
+    border-style: inset;
+    background-color: var(--shadow);
+}
+
 
 a:hover {
     /* make link bold */
     font-weight: 550;
     /* stronger underline */
     text-decoration: underline wavy;
-}
-
-button {
-    padding-top: 2ch;
-    padding-bottom: 2cap;
-    padding-left: 5cqb;
-    padding-right: 5cm;
-    padding: auto;
-}
-
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-button:hover {
-    cursor: pointer;
-    font-weight: bolder;
 }
 
 

@@ -15,6 +15,7 @@
     /* --white-smoke: #f5f5f5ff; */
     --white-smoke: #F6F4F5;
     --ivory: #fffff2ff;
+    --alabaster: #DFDFD5;
     --platinum: #E6E6E6;
     /* --platinum: #e5e5e5ff; */
     --anti-flash-white: #F0F0F0;
@@ -22,6 +23,7 @@
     /* --silver: #C0C0C0; */
     /* --silver: #B0B0B0; */
     --silver: #A5A5A5;
+    --sea-salt: #F8F8F8;
     --french-gray: #C3BFCB;
     --charcoal: #424b54ff;
     --rich-black: #101018;
@@ -65,7 +67,7 @@
     --info: var(--blue-ncs);
 
     --sparkle: var(--blue-ncs);
-    --shell: var(--platinum);
+    --shell: var(--sea-salt);
     --shade: var(--timberwolf);
     --shadow: var(--silver);
 }
