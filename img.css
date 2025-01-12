@@ -2,7 +2,7 @@ img{
     max-width: 100%;
     height: 100%;
     /* squircle */
-    border-radius: 3%;
+    border-radius: var(--border-radius);
     float: none;
     margin: auto;
     padding: 3px;
@@ -44,8 +44,11 @@ video{
     display: block;
     margin: auto;
 
+    max-width: 100%;
+    height: 100%;
+
     /* squircle */
-    border-radius: 5%;
+    border-radius: var(--border-radius);
 }
 
 
@@ -56,6 +59,7 @@ iframe{
 
     /* display: block; */
     margin: auto;
+
 
     border-style: inset;
     border-width: 3px;
