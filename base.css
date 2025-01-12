@@ -23,11 +23,11 @@
 
  */
 
-@import './table.css';
-@import './inputs.css';
-@import 'media.css';
-@import 'block.css';
-@import 'typography.css';
+@import url('./table.css');
+@import url('./inputs.css');
+@import url('media.css');
+@import url('block.css');
+@import url('typography.css');
 
 :root {
     --border-radius: calc(24em/54);
@@ -35,37 +35,37 @@
 }
 
 @font-face {
-    font-family: "Madelyn";
+    font-family: Madelyn;
     src: url("fonts/Madelyn.otf");
 }
 
 @font-face {
-    font-family: "chill";
+    font-family: chill;
     src: url("fonts/super-chill.otf");
 }
 
 @font-face {
-    font-family: "rude";
+    font-family: rude;
     src: url("fonts/rude.otf");
 }
 
 @font-face {
-    font-family: "scribble";
+    font-family: scribble;
     src: url("fonts/scribble.otf");
 }
 
 @font-face {
-    font-family: "sugar";
+    font-family: sugar;
     src: url("fonts/sugar.otf");
 }
 
 @font-face {
-    font-family: "wonderland";
+    font-family: wonderland;
     src: url("fonts/WONDERLANDPRO-Regular.ttf");
 }
 
 @font-face {
-    font-family: "corbert";
+    font-family: corbert;
     src: url("fonts/Corbert-Regular.ttf");
 }
 
@@ -79,20 +79,18 @@ html {
 
 body {
     box-sizing: border-box;
-
     width: 100vw;
     max-width: 100%;
-
     height: 100vh;
     min-height: 100%;
-    margin: 0px;
+    margin: 0;
     padding: 1em;
     border-radius: var(--border-radius);
 }
 
 q,
 p {
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizelegibility;
 }
 
 q {
@@ -117,13 +115,15 @@ progress,
 meter {
     min-height: 100%;
     height: calc(var(--font-size)*1.25);
-
     min-width: var(--font-size);
     max-width: 100%;
+
     /* width: 100%; */
+
     /* cursor: progress; */
 
     /* border-radius: var(--border-radius); */
+
     /* accent-color: var(--success); */
 }
 
@@ -131,9 +131,13 @@ meter {
 progress {
     cursor: progress;
     color: var(--success);
+
     /* outline:violet; */
+
     /* border-radius: var(--border-radius); */
+
     /* background-color: brown; */
+
     /* accent-color: var(--success); */
 }
 
@@ -152,6 +156,7 @@ progress::-webkit-progress-value {
 
 progress::-webkit-progress-inner-element {
     /* outline: pink; */
+
     /* background-color: var(--shade); */
     border-radius: var(--border-radius);
 }
@@ -160,6 +165,7 @@ progress::-webkit-progress-inner-element {
 progress::-moz-progress-bar {
     /* outline: green; */
     -color: var(--success);
+
     /* border-radius: var(--border-radius); */
     width: 100%;
     height: 100%;
@@ -167,6 +173,7 @@ progress::-moz-progress-bar {
 
 progress::-ms-fill {
     outline: green;
+
     /* background-color: var(--success); */
     border-radius: var(--border-radius);
 }
@@ -177,12 +184,14 @@ progress::-ms-fill {
 /* !! non-standard(?) */
 progress::-webkit-progress-inner-value {
     outline: pink;
+
     /* background-color: var(--shade); */
     border-radius: var(--border-radius);
 }
 
 progress::-moz-range-progress {
     outline: green;
+
     /* background-color: var(--success); */
     border-radius: var(--border-radius);
 }
@@ -192,6 +201,7 @@ progress::-moz-range-progress {
 
 meter::-webkit-meter-bar {
     /* background-color: var(--shade); */
+
     /* outline: auto; */
     border-color: var(--shadow);
     border-radius: var(--border-radius);
@@ -222,6 +232,7 @@ meter::-webkit-meter-even-less-good-value {
 
 meter::-moz-meter-bar {
     /* background-color: var(--shade); */
+
     /* outline: auto; */
 }
 
