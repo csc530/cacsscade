@@ -4,10 +4,10 @@ A clean classless classy cascading style sheet for a lil' pazazz you need on the
 
 ## Superiors
 
-- [Tacit](https://github.com/yegor256/tacit) (I stole your html page to test against thx🙇🏿‍♂️🙏🏿)
+- [Tacit](https://github.com/yegor256/tacit): tactful, and it just works (I stole your html page to test against thx🙇🏿‍♂️🙏🏿)
 - [Bulma](https://bulma.io/): it may not be classless but it's my personal favourite and adds some nice buff in base (without classes)
 - [concrete](https://concrete.style/): solid base and beautiful B/W styling, I like it
-- [MVP](https://github.com/andybrewer/mvp/): it's got some *opinions* but it's good especially if want easy to use components
+- [MVP](https://github.com/andybrewer/mvp/): it's got some *opinions* but it's good especially if you want easy to use components
 
 ## opinions 🤮
 
@@ -53,3 +53,5 @@ or clone the repo and download the file and link to it locally.
 - [ ] dark-mode
 - [ ] Catppuccin compliance
 - [ ] ⭐style✨
+- [ ] responsive
+- [ ] animations
