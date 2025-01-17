@@ -53,5 +53,5 @@ or clone the repo and download the file and link to it locally.
 - [ ] dark-mode
 - [ ] Catppuccin compliance
 - [ ] ⭐style✨
-- [y] responsive
+- [x] responsive
 - [ ] animations
