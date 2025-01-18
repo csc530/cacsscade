@@ -5,18 +5,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet">
-        <title>Comprehensive HTML Tag Test</title>
+        <title>caCSSade</title>
     </head>
 
     <body>
         <header>
-            <h1>Comprehensive HTML Tag Test</h1>
+            <h1 title="I'm an h1">Comprehensive HTML Tag Test</h1>
+            <p>So here we have a header with a navigation bar below. And you can expect more <code>p</code> snippets
+                throughout the page explaining elements, styling, and behaviours😉.<small>If you're even reading and not
+                    just rampantly scrolling through and <em>seeing</em> how everyhting looks🤷🏿</small></p>
+
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#">CaCSScade</a></li>
                     <li><a href="tacit.html">Tacit</a></li>
-                    <li><a
-                            href="https://www.youtube.com/watch?si=CSmhfT-uFDCfadNz&v=YxvZdnS6aw4&feature=youtu.be">Contact</a>
+                    <li><a href="concrete.html">Concrete</a>
                     </li>
                 </ul>
             </nav>
@@ -45,11 +48,16 @@
                 <h2>Lists</h2>
                 <ul>
                     <li>Unordered list item 1</li>
-                    <li>Unordered list item 2</li>
-                    <li>Unordered list item 3</li>
+                    <li>
+                        <p>I have a p in me</p>
+                    </li>
+                    <li>
+                        <p><strong>pause</strong> not liike that 😭</p>
+                    </li>
                 </ul>
+
                 <ol>
-                    <li>Ordered list item 1</li>
+                    <li>don't usually see order lists out in the wild do you?</li>
                     <li>Ordered list item 2</li>
                     <li>Ordered list item 3</li>
                 </ol>
@@ -60,37 +68,116 @@
                     <dd>Definition Description 2</dd>
                 </dl>
             </section>
+
             <section>
                 <h2>Tables</h2>
-                <table>
-                    <caption>Sample Table</caption>
+                <table class="standard-table">
                     <thead>
-                        <tr>
-                            <th>Header 1</th>
-                            <th>Header 2</th>
-                        </tr>
+                      <tr>
+                        <th scope="row">Abbreviation</th>
+                        <th scope="row">File format</th>
+                        <th scope="col">MIME type</th>
+                        <th scope="col">File extension(s)</th>
+                        <th scope="col">Summary</th>
+                      </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Data 1</td>
-                            <td>Data 2</td>
-                        </tr>
-                        <tr>
-                            <td>Data 3</td>
-                            <td>Data 4</td>
-                        </tr>
+                      <tr>
+                        <th scope="row">
+                          <a href="#apng_animated_portable_network_graphics">APNG</a>
+                        </th>
+                        <th scope="row">Animated Portable Network Graphics</th>
+                        <td><code>image/apng</code></td>
+                        <td><code>.apng</code>, <code>.png</code></td>
+                        <td>
+                          Good choice for lossless animation sequences (GIF is less performant).
+                          AVIF and WebP have better performance but less broad browser support.<br>
+                          <strong>Support:</strong> Chrome, Edge, Firefox, Opera, Safari.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#avif_image">AVIF</a></th>
+                        <th scope="row">AV1 Image File Format</th>
+                        <td><code>image/avif</code></td>
+                        <td><code>.avif</code></td>
+                        <td>
+                          <p>
+                            Good choice for both images and animated images due to high performance and royalty free image format.
+                            It offers much better compression than PNG or JPEG with support for higher color depths, animated frames, transparency, etc.
+                            Note that when using AVIF, you should include fallbacks to formats with better browser support (i.e. using the <code><a href="/en-US/docs/Web/HTML/Element/picture">&lt;picture&gt;</a></code> element).<br>
+                            <strong>Support:</strong> Chrome, Edge, Firefox, Opera, Safari.
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#gif_graphics_interchange_format">GIF</a></th>
+                        <th scope="row">Graphics Interchange Format</th>
+                        <td><code>image/gif</code></td>
+                        <td><code>.gif</code></td>
+                        <td>
+                          Good choice for simple images and animations.
+                          Prefer PNG for lossless <em>and</em> indexed still images, and consider WebP, AVIF or APNG for animation sequences.<br>
+                          <strong>Support:</strong> Chrome, Edge, Firefox, IE, Opera, Safari.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <a href="#jpeg_joint_photographic_experts_group_image">JPEG</a>
+                        </th>
+                        <th scope="row">Joint Photographic Expert Group image</th>
+                        <td><code>image/jpeg</code></td>
+                        <td>
+                          <code>.jpg</code>, <code>.jpeg</code>, <code>.jfif</code>,
+                          <code>.pjpeg</code>, <code>.pjp</code>
+                        </td>
+                        <td>
+                          <p>
+                            Good choice for lossy compression of still images (currently the most popular).
+                            Prefer PNG when more precise reproduction of the image is required, or WebP/AVIF if both better reproduction and higher compression are required.<br>
+                            <strong>Support:</strong> Chrome, Edge, Firefox, IE, Opera, Safari.
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#png_portable_network_graphics">PNG</a></th>
+                        <th scope="row">Portable Network Graphics</th>
+                        <td><code>image/png</code></td>
+                        <td><code>.png</code></td>
+                        <td>
+                          <p>
+                            PNG is preferred over JPEG for more precise reproduction of source images, or when transparency is needed. WebP/AVIF provide even better compression and reproduction, but browser support is more limited.<br>
+                            <strong>Support:</strong> Chrome, Edge, Firefox, IE, Opera, Safari.
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#svg_scalable_vector_graphics">SVG</a></th>
+                        <th scope="row">Scalable Vector Graphics</th>
+                        <td><code>image/svg+xml</code></td>
+                        <td><code>.svg</code></td>
+                        <td>
+                          Vector image format; ideal for user interface elements, icons, diagrams, etc., that must be drawn accurately at different sizes.<br>
+                          <strong>Support:</strong> Chrome, Edge, Firefox, IE, Opera, Safari.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#webp_image">WebP</a></th>
+                        <th scope="row">Web Picture format</th>
+                        <td><code>image/webp</code></td>
+                        <td><code>.webp</code></td>
+                        <td>
+                          Excellent choice for both images and animated images.
+                          WebP offers much better compression than PNG or JPEG with support for higher color depths, animated frames, transparency etc.
+                          AVIF offers slightly better compression, but is not quite as well-supported in browsers and does not support progressive rendering.<br>
+                          <strong>Support:</strong> Chrome, Edge, Firefox, Opera, Safari
+                        </td>
+                      </tr>
                     </tbody>
-                    <tfoot>
-                        <tr>
-                            <td>Footer 1</td>
-                            <td>Footer 2</td>
-                        </tr>
-                    </tfoot>
-                </table>
+                  </table>
             </section>
             <section>
                 <h2>Forms</h2>
-                <form  action="#">
+                <form action="#">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name">
                     <br>
@@ -239,14 +326,65 @@
             </section>
             <section>
                 <h2>Media</h2>
+                <p>Below we got some ultra high-def large images coming from <a href="unslpash.com"></a> and <a
+                        href="kaboompics.com"></a>. You can expect some page jumps; you should be using the
+                    <code>width</code> and <code>height</code> attributes to prevent this.
+                </p>
                 <img src="https://images.unsplash.com/photo-1478061653917-455ba7f4a541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Placeholder">
+
+                <p>Notice the image above and below are very large but will always be contained within the viewport and
+                    maintain their aspect ratio 😊.</p>
 
                 <figure>
                     <img src="https://kaboompics.com/download/bcb65ca6f173aeddb1894d4d1ef8b1c9/original"
                         alt="Placeholder">
-                    <figcaption>Figure caption</figcaption>
+                    <figcaption>The image above is in a <code>figure</code> (and this is a <code>figcaption</code>).
+                        This make the image visually centered otherwise the will be aligned to the reading direction.
+                    </figcaption>
                 </figure>
+
+                <p>Below is an svg image that has an intrinsic width and height (of 512px) so it will grow to that
+                    dimension even without the <code>width</code> and <code>height</code> attributes being set.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/SVG_Logo.svg"
+                    alt="svg with intrinsic size" height="512" width="512">
+                <p>However the below svg does not have an a set width and height so it will always grow to the size of
+                    the screen and <strong>needs a <code>width</code> and <code>height</code></strong>.</p>
+
+
+                <img src="https://openclipart.org/download/350608/m-03.svg" alt="svg with no intrinsic size">
+
+                <p>images are still "inline" elements so if space permits they will be displayed side by side</p>
+
+                <img src="https://cdn.svgator.com/images/2021/10/solar-system-animation.svg" alt="animated svg" loading="lazy">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Joint_Photographic_Experts_Group_logo.svg/232px-Joint_Photographic_Experts_Group_logo.svg.png"
+                    alt="small jpg" loading="lazy">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Digimon_Logo.png" alt="wide png">
+                <img alt="small Animated GIF" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzN6bG1hNTl6aWx0MnhucWY5OHBqM3Z6eTB0MTI0eDBoOG1zb3R2NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/scZPhLqaVOM1qG4lT9/giphy.gif">
+                <img src="https://tpet.ca/wp-content/uploads/2024/02/Interconnected-Earth-Systems_600-350x350.webp"
+                    alt="small webp">
+                    <img src="https://www.eredetiajandekok.hu/sub/balabim.sk/images/shop-active-images/solarbot-14v1-16.jpg.avif"
+                    alt="large avif">
+                    <img alt="animated png" src="https://starbeamrainbowlabs.com/blog/images/20190216-Night-Pan.apng">
+
+                    <picture>
+                        <source src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExajFjeGdpem95ODk5YmhpdWhoZTB5Z3VvaHdrMTRtbW1teWsxYzY1eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ef72To2kJgyAC1FdxK/giphy.gif" type="image/gif">
+                        <source srcset="https://upload.wikimedia.org/wikipedia/commons/4/4f/SVG_Logo.svg" type="image/svg+xml">
+                        <source src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2FubXludm5mY3NlMmhhdXA1bWs5YTVyYnVqZG15YWxkYmIwcmwyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6UAk2UiNKDBBQn5NUX/giphy.gif"
+                        alt="Animated GIF">
+                        <img src="" alt="svg with intrinsic size" height="512" width="512">
+                    </picture>
+                        <p>However if you place an image inside a text tag such as<img
+                        src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXg3cXVxNnI5aDZ5dDBoNTFpOW5yOWEyd3l6bGM0eGZtc210ZmdkcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/10hb4z8Gst51GE/giphy.gif"
+                        alt=""> <code>&lt;p&gt;</code> it will float  left or right if it's odd or even respectively. The thought process is that image
+                    complements the text but shouldn't break the reader's flow. So if you want an image to be sequential
+                    to the text you should use <code>&lt;figure&gt;</code> or place the <code>img</code> after the text
+                    tag (as which has been done😉).</p>
+                    <p>if you're wondering why there's so much page jumps is because most of the images don't have their dimensions specified, the way it iis for most images in tthe wild 🥲. Don't do that; this is only for illustrative puposes to show caCSScade's effectiiveness with realistic (though bad) HTML: not only on optimal and best practices code like yours, obviously.</p>
+
+
+
+                <p>Not much I did with the audio element</p>
 
                 <audio autoplay controls src="https://www.soundboard.com/track/download/156453d=">
                     Your browser does not support the audio element.

@@ -2,6 +2,8 @@
 
 A clean classless classy cascading style sheet for a lil' pazazz you need on the go.
 
+It [may] also help incentivize/promote cleaner semantic HTML.
+
 ## Superiors
 
 - [Tacit](https://github.com/yegor256/tacit): tactful, and it just works (I stole your html page to test against thx🙇🏿‍♂️🙏🏿)
@@ -15,7 +17,7 @@ I tried to keep the sizing and overall look and feel of the page as close to bro
 But with some intentional markup changes beautiful pages a cascade away.
 
 - nest inputs in labels: this makes the fullwidth -- hence nicer
--
+- add a height and width attributes to ``img`s **especially SVG images** (in case they don't have a set/intrinsic width and height)
 
 ---
 
