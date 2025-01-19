@@ -16,6 +16,7 @@ It [may] also help incentivize/promote cleaner semantic HTML.
 I tried to keep the sizing and overall look and feel of the page as close to browser defaults as possible (which I think is sexy in its own way).
 But with some intentional markup changes beautiful pages a cascade away.
 
+- tables are scrollable, **but** to do this (without enforcing a parent element) the height is constrained so it scrolls in the y-axis as well (at 80vh)
 - nest inputs in labels: this makes the fullwidth -- hence nicer
 - add a height and width attributes to ``img`s **especially SVG images** (in case they don't have a set/intrinsic width and height)
 
