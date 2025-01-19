@@ -8,6 +8,7 @@
 @import url('media.css');
 @import url('block.css');
 @import url('typography.css');
+@import url('list.css');
 @import url('print.css');
 
 body nav {
@@ -96,47 +97,4 @@ dialog {
     position: fixed;
     margin: auto;
     z-index: 100;
-}
-
-
-ul {
-    list-style-type: symbols(cyclic "✓");
-    list-style-type: unordered;
-    list-style: symbols(cyclic "*" "†" "‡");
-}
-
-@counter-style unordered {
-    system: cyclic;
-    symbols: "●";
-    suffix: " ";
-}
-
-@counter-style unordered-emphasis {
-    system: cyclic;
-    symbols: "◆";
-    suffix: " ";
-}
-
-@counter-style unordered-strong {
-    system: cyclic;
-    symbols: "★";
-    suffix: " ";
-}
-
-@counter-style unordered-strong-emphasis {
-    system: cyclic;
-    symbols: "★◆";
-    suffix: " ";
-}
-
-@counter-style unordered-emphasis-strong {
-    system: cyclic;
-    symbols: "◆★";
-    suffix: " ";
-}
-
-@counter-style circled-alpha {
-    system: fixed;
-    symbols: ⓐ ⓑ ⓒ ⓓ ⓔ ⓕ ⓖ ⓗ ⓘ ⓙ ⓚ ⓛ ⓜ ⓝ ⓞ ⓟ ⓠ ⓡ ⓢ ⓣ ⓤ ⓥ ⓦ ⓧ ⓨ ⓩ;
-    suffix: " ";
 }
