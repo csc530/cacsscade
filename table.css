@@ -12,6 +12,8 @@ table {
     height: max-content;
     max-height: 100%;
 
+    margin: auto;
+
     border-style: solid;
     border-radius: var(--border-radius);
     border-color: var(--shadow);

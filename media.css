@@ -21,6 +21,9 @@ iframe {
     object-fit: contain;
 
     vertical-align: middle;
+
+    /* for SVGs */
+    text-rendering: optimizelegibility;
 }
 
 p img:nth-child(even),
