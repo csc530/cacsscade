@@ -1,0 +1,155 @@
+code,
+pre {
+    font-family: inherit;
+
+    width: fit-content;
+    max-width: 100%;
+    float: none;
+    padding: 3px;
+
+
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    white-space-collapse: preserve-breaks;
+
+
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: inherit;
+}
+
+code {
+    font-family: monospace;
+
+    height: 100%;
+
+    background-color: var(--shade);
+    border-radius: var(--border-radius);
+
+    padding: 0.1em 0.45em;
+    margin: auto .1em;
+    vertical-align: middle;
+}
+
+
+
+
+q,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+code,
+pre {}
+
+
+blockquote {
+    /* border-inline-start: 5px solid var(--shadow); */
+    padding: 0.5em;
+    margin: 1em;
+    /* background-color: var(--shade); */
+    border-radius: var(--border-radius);
+    box-shadow: inset 0px 3px var(--shadow);
+    /* a nice thin and blurry top box shadow */
+    font-style: italic;
+}
+
+@media (direction: rtl) {
+    blockquote {
+        border-inline-start: 0;
+        border-inline-end: 5px solid var(--shadow);
+    }
+}
+
+@media (direction: ltr) {
+    blockquote {
+        border-inline-start: 5px solid var(--shadow);
+        border-inline-end: 0;
+    }
+}
+
+q {}
+
+blockquote,
+q {
+    font-style: italic;
+    font-family: serif;
+    font-weight: normal;
+}
+
+
+strong {
+    font-weight: bolder;
+}
+
+em {
+    font-style: italic;
+}
+
+mark {
+    background-color: var(--warning);
+}
+
+del {
+    text-decoration: line-through;
+}
+
+ins {
+    text-decoration: underline;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+sup {
+    vertical-align: super;
+}
+
+abbr[title] {
+    text-decoration-color: inherit;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-skip: box-decoration;
+}
+
+abbr {
+    color: var(--info);
+    cursor: help;
+}
+
+i {
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+b {
+    font-weight: 450;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+kbd {
+    font-family: monospace;
+    padding: 0.1em 0.3em;
+    border-radius: var(--border-radius);
+    background-color: var(--shade);
+    border: 1px solid var(--shadow);
+
+    display: inline-block;
+    box-shadow: 0 1px 0 var(--shadow), 0 2px 0 var(--shadow), 0 3px 0 var(--shadow), 0 4px 0 var(--shadow), 0 5px 0 var(--shadow), 0 6px 1px rgba(0, 0, 0, 0.1);
+    margin: auto 0.1em;
+
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: none;
+    font-style: italic;
+}

@@ -1,0 +1,65 @@
+body {
+    box-sizing: border-box;
+
+    width: 100vw;
+    max-width: 100%;
+
+    min-height: 100%;
+    height: 100vh;
+
+    margin: 0;
+    padding: 1em;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+section:not(:last-child),
+article:not(:last-child),
+div:not(:last-child),
+header:not(:last-child),
+footer:not(:last-child),
+main:not(:last-child),
+nav:not(:last-child),
+/* aside:not(:last-child) */
+p:not(:last-child) {
+    /* border: 1px solid black; */
+    margin-bottom: 1.25em;
+}
+
+article{
+    border: 1px solid #00000035;
+    padding: 1em;
+    background-color: var(--shell);
+    box-shadow: 0 0 5px 0 var(--shadow);
+    border-radius: var(--border-radius);
+}
+
+
+aside {
+
+    min-width: min-content;
+    width: 15%;
+
+    padding: 0.5em;
+
+    padding-left: 0.65em;
+    margin-left: 0.5em;
+    box-shadow: inset 5px 0 5px -5px var(--shadow);
+    /* font-style: italic; */
+    color: var(--info);
+    float: inline-end
+}
+
+@media (dir: ltr) {
+    aside {
+        float: right;
+    }
+}
+
+/* float left if dir is ltr */
+@media (dir: rtl) {
+    aside {
+        float: left;
+    }
+}

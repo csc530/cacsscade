@@ -77,34 +77,6 @@ html {
     font-style: normal;
 }
 
-body {
-    box-sizing: border-box;
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    min-height: 100%;
-    margin: 0;
-    padding: 1em;
-    border-radius: var(--border-radius);
-}
-
-q,
-p {
-    text-rendering: optimizelegibility;
-}
-
-q {
-    font-style: oblique;
-}
-
-blockquote,
-q {
-    font-family: cursive;
-}
-
-* {
-    font-display: fallback;
-}
 
 /* resouerces
 

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="styles.css" rel="stylesheet">
+        <link href="cacsscade.css" rel="stylesheet">
         <title>caCSSade</title>
     </head>
 
@@ -25,54 +25,75 @@
             </nav>
         </header>
         <main>
-            <section>
-                <h2>Text Elements</h2>
-                <p>This is a paragraph. <strong>Strong text</strong>, <em>emphasized text</em>, <mark>marked
-                        text</mark>, <small>small text</small>, <del>deleted text</del>, <ins>inserted text</ins>,
-                    <sub>subscript</sub>, <sup>superscript</sup>.
+            <aside>
+                <h2>Aside</h2>
+                <p>Use this to emphasize a content indirectly related to the main content of an ancestor or sibling tag.
                 </p>
-                <p><abbr title="HyperText Markup Language">HTML</abbr> is the standard markup language for creating web
-                    pages.</p>
-                <blockquote cite="https://www.example.com">This is a blockquote.</blockquote>
-                <q cite="https://www.example.com">This is an inline quote.</q>
-                <address>
-                    Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
-                    Visit us at:<br>
-                    Example.com<br>
-                    Box 564, Disneyland<br>
-                    USA
-                </address>
-                <time datetime="2024-09-07">September 7, 2024</time>
-            </section>
-            <section>
-                <h2>Lists</h2>
-                <ul>
-                    <li>Unordered list item 1</li>
-                    <li>
-                        <p>I got some content a <code>p</code> and <code>code</code>s</p>
-                        <ul>
-                            <li>oh and another list with items</li>
-                            <li>
-                                <ol>
-                                    <li>with even more lists :)</li>
-                                </ol>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+            </aside>
+            <article>
+                <h2>I'm an article</h2>
+                <p>Since articles are self contained compositions within a page with a possibilities of many instances
+                    with a page I (Codieum and I) decided to style it as such.</p>
+                <section>
+                    <h3>Text Elements</h3>
+                    <p>This is a paragraph. <strong>Strong text</strong>, <em>emphasized text</em>, <mark>marked
+                            text</mark>, <small>small text</small>, <del>deleted text</del>, <ins>inserted text</ins>,
+                        <sub>subscript</sub>, <sup>superscript</sup>,<i>idiomatic text (something different about
+                            it)</i>, <b>text brought to attention (but of no real importance or significance)</b>.
+                    </p>
+                    <p><dfn id="def"><abbr title="HyperText Markup Language">HTML</abbr></dfn> is the standard markup
+                        language for creating webpages.</p>
+                    <p>While <dfn id="ccsscd">CaCSScade</dfn> is a CSS framework library made to make <abbr>HTML</abbr>
+                        look good.</p>
+                    <blockquote cite="https://www.example.com">
+                        <pre>
+                        This is a blockquote.
+                        Not very long, but quite quotable.
 
-                <ol>
-                    <li>don't usually see order lists out in the wild do you?</li>
-                    <li>Ordered list item 2</li>
-                    <li>Ordered list item 3</li>
-                </ol>
-                <dl>
-                    <dt>Definition Term 1</dt>
-                    <dd>Definition Description 1</dd>
-                    <dt>Definition lists</dt>
-                    <dd>a niche and ununsed HTML tags for defining terms, concepts, or phrases (glossary)</dd>
-                </dl>
-            </section>
+                        - CSC530
+                        </pre>
+                    </blockquote>
+                    <q cite="https://www.example.com"><kbd>Alt</kbd>
+                        + <kbd>F4</kbd> make your computer go brrrr. - CSC530</q>
+                    <address>
+                        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+                        Visit us at:<br>
+                        Example.com<br>
+                        Box 564, Disneyland<br>
+                        USA
+                    </address>
+                    <time datetime="2024-09-07">September 7, 2024</time>
+                </section>
+                <section>
+                    <h3>Lists</h3>
+                    <ul>
+                        <li>Unordered list item 1</li>
+                        <li>
+                            <p>I got some content a <code>p</code> and <code>code</code>s</p>
+                            <ul>
+                                <li>oh and another list with items</li>
+                                <li>
+                                    <ol>
+                                        <li>with even more lists :)</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ol>
+                        <li>don't usually see order lists out in the wild do you?</li>
+                        <li>Ordered list item 2</li>
+                        <li>Ordered list item 3</li>
+                    </ol>
+                    <dl>
+                        <dt>Definition Term 1</dt>
+                        <dd>Definition Description 1</dd>
+                        <dt>Definition lists</dt>
+                        <dd>a niche and ununsed HTML tags for defining terms, concepts, or phrases (glossary)</dd>
+                    </dl>
+                </section>
+            </article>
 
             <section>
                 <h2>Tables</h2>
@@ -369,7 +390,8 @@
                 <img src="https://openclipart.org/download/269984/Prismatic-Triangular-Infinity-Symbol.svg"
                     alt="svg with no intrinsic size">
 
-                <p>images are still "inline" elements so if space permits they will be displayed side by side + notice those lovely squircle  corners🥵</p>
+                <p>images are still "inline" elements so if space permits they will be displayed side by side + notice
+                    those lovely squircle corners🥵</p>
 
                 <img src="https://cdn.svgator.com/images/2021/10/solar-system-animation.svg" alt="animated svg"
                     loading="lazy">
@@ -418,11 +440,11 @@
 
                 <figure>
                     <figcaption>Plus everything applicable from images applies to the video tag too</figcaption>
-                <video muted playsinline controls loop autoplay preload="auto"
-                    src="https://player.odycdn.com/v6/streams/069c2cd2da0dd4f81dbe6d63c1f915005babb4cd/120239.mp4"
-                    poster="https://i.vimeocdn.com/video/797311590-039c9525430c8c554e5100ab33b4a07912a658693437b898268ff6a73d0dc73a-d">
-                    Your browser does not support the video element.
-                </video>
+                    <video muted playsinline controls loop autoplay preload="auto"
+                        src="https://player.odycdn.com/v6/streams/069c2cd2da0dd4f81dbe6d63c1f915005babb4cd/120239.mp4"
+                        poster="https://i.vimeocdn.com/video/797311590-039c9525430c8c554e5100ab33b4a07912a658693437b898268ff6a73d0dc73a-d">
+                        Your browser does not support the video element.
+                    </video>
                 </figure>
 
                 <iframe src="https://www.example.com" width="400" height="300" allowfullscreen
