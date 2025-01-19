@@ -8,6 +8,7 @@
 @import url('media.css');
 @import url('block.css');
 @import url('typography.css');
+@import url('print.css');
 
 body nav {
     display: flex;
@@ -15,8 +16,8 @@ body nav {
     justify-content: space-between;
     align-items: center;
     padding: 0.5em;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: var(--shell);
+    border-bottom: 1px solid var(--shadow);
 }
 
 body nav ul {
@@ -85,7 +86,7 @@ dialog[open]::backdrop {
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: rgb(0 0 0 / 20.5%);
+    background-color: rgba(0, 0, 0, 75%);
 }
 
 dialog {
