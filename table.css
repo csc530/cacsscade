@@ -1,17 +1,32 @@
 table {
+    /* allows for overflow scrolling */
+    display: block;
+
+    box-sizing: border-box;
     z-index: 1;
 
     table-layout: auto;
-    width: 100%;
+    width: max-content;
+    max-width: 100%;
+
+    height: max-content;
+    max-height: 100%;
+
     border-style: solid;
     border-radius: var(--border-radius);
-    /* border-radius: 4000000000000px; */
     border-color: var(--shadow);
     border-width: .31em;
 
+    white-space: normal;
+    text-wrap-style: pretty;
+    text-wrap-mode: wrap;
 
-    /* border-collapse: collapse; */
+
+    /* keeps exterior edges rounded */
+    border-collapse: separate;
     border-spacing: 0;
+
+    overflow: auto;
 }
 
 table caption {
@@ -27,15 +42,47 @@ tfoot {
 
     text-align: center;
     width: 100%;
-    background-color: var(--shell);
+}
+
+tbody {
+    display: table-row-group;
+    max-width: 100%;
+    vertical-align: middle;
+    border-collapse: collapse;
+}
+
+tr {
+    max-width: 100%;
+    width: 100%;
+
+    overflow: scroll;
 }
 
 th {
+    box-sizing: border-box;
     border-width: .01em;
     border-style: solid;
     border-color: inherit;
     border-collapse: collapse;
     empty-cells: show;
+
+    background-color: var(--shell);
+}
+
+th[scope="col"],
+th[scope="colgroup"] {
+    max-width: 100%;
+    top: 0;
+    z-index: 1;
+    position: sticky;
+}
+
+th[scope="row"],
+th[scope="rowgroup"] {
+    max-width: 100%;
+    left: 0px;
+    z-index: 1;
+    position: sticky;
 }
 
 
@@ -52,11 +99,7 @@ td {
     empty-cells: show;
 }
 
-tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    border-collapse: collapse;
-}
+
 
 tbody tr:nth-child(odd) {
     /* background-color: var(--shell); */
