@@ -196,6 +196,8 @@
             <section>
                 <h2>Forms</h2>
                 <form action="#">
+                    <label for="input">Input:</label>
+                    <input id="input" value="Inputs are inline like plain CSS + HTML">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name">
                     <br>
@@ -230,110 +232,104 @@
                     </label>
                     <input type="file" id="file" name="file">
                     <br>
-                    <label for="signature">Signature:
-                        <input type="text" id="signature" name="signature">
+                    <label for="nested">Label:
+                        <input type="text" id="nested" value="input nested in label are fullwidth, block" readonly>
                     </label>
+
                     <fieldset>
-                        <legend>Choose your favorite programming language:</legend>
-                        <input type="radio" id="html" name="language" value="HTML">
-                        <label for="html">HTML</label>
+                        <legend>Fieldset's legend</legend>
+                        <label>Nested reverse input
+                            <input type="radio" name="radio" value="CSS">
+                        </label>
+
+                        <input type="radio" id="html" name="radio" value="HTML">
+                        <label for="html">Radio button</label>
                         <br>
-                        <label for="css">CSS
-                            <input type="radio" id="css" name="language" value="CSS">
+
+                        <label>
+                            <input type="radio" name="radio" value="CSS">
+                            Nested input
                         </label>
                         <br>
-                        <label for="javascript">JavaScript</label>
-                        <input type="radio" id="javascript" name="language" value="JavaScript">
+
+                        <label for="javascript">non-nested radio buttons are smaller😬 <em>use consistently</em></label>
+                        <input type="radio" id="javascript" name="radio" value="JavaScript">
                     </fieldset>
                     <br>
-                    <label for="continent">Choose your continent:</label>
-                    <select id="continent" name="continent">
-                        <option value="europe">Europe</option>
-                        <option value="asia">Asia</option>
-                        <option value="africa">Africa</option>
-                        <optgroup label="Americas">
-                            <option value="north-america">North America</option>
-                            <option value="south-america">South America</option>
+                    <label for="continent">Select:</label>
+                    <select id="continent">
+                        <option value="europe">Option</option>
+                        <optgroup label="Optgroup">
+                            <option value="north-america">select optgroup option</option>
                         </optgroup>
-                        <option value="australia">Australia</option>
-                        <option value="antarctica">Antarctica</option>
+                        <option value="australia">another option</option>
                     </select>
                     <br>
 
-                    <label for="faction">Choose your faction:
+                    <label for="faction">Nested select:
                         <select id="faction" name="faction">
-                            <option value="alliance">Alliance</option>
-                            <option value="horde">Horde</option>
-                            <option value="scourge">Scourge</option>
-                            <option value="neutral">Neutral</option>
-                            <option value="outlaw">outlaw</option>
+                            <option value="horde" selected disabled>Can't choose me</option>
+                            <option value="alliance">full width option</option>
                         </select>
                     </label>
                     <br>
 
 
-                    <label for="languages">Choose multiple programming languages:</label>
+                    <label for="languages">Multi-Select:</label>
                     <select id="languages" name="languages" multiple>
-                        <option value="html">HTML</option>
-                        <option value="css">CSS</option>
-                        <option value="javascript">JavaScript</option>
+                        <option value="html">Make sure to specify</option>
+                        <option value="css">A number</option>
+                        <option value="javascript">for the size attribute</option>
+                        <optgroup label="that will determine">
+                            sad
+                            <option value="php">how many options</option>
+                            <option value="python">are displayed at once</option>
+                        </optgroup>
                     </select>
+
                     <br>
 
-                    <label for="traits">Traits:
-                        <select id="traits" name="traits" size="3" multiple>
-                            <option value="strong">Strong</option>
-                            <option value="fast">Fast</option>
-                            <option value="smart">Smart</option>
-                            <optgroup label="Superpowers">
-                                <option value="flight">Flight</option>
-                                <option value="invisibility">Invisibility</option>
-                                <option value="teleportation">Teleportation</option>
-                            </optgroup>
-                            <option value="quirky">Quirky</option>
-                        </select>
-                    </label>
-
-                    <label for="bio">Biography:</label>
-                    <textarea id="bio" name="bio"></textarea>
+                    <label for="bio">Textarea:</label>
+                    <textarea placeholder="" id="bio" name="bio"></textarea>
                     <br>
 
-                    <label for="comments">Comments:
-                        <textarea id="comments" name="comments"></textarea>
+                    <label for="comments">Nested textarea:
+                        <textarea id="comments"
+                            placeholder="the non-nested inputs have been separated with <br> tags, thank you!"
+                            name="comments"></textarea>
                     </label>
                     <br>
-                    <label><input type="checkbox" name="consent" id="consent" value="test">I agree with all possible
-                        terms and conditions</label>
 
-                    <p>I want to receive communications via:
-                        <br>
-                        <input type="checkbox" id="comm-email" name="communications" value="email">
-                        <label for="comm-email">Email</label>
-                        <br>
-                        <label for="phone">Phone</label>
-                        <input type="checkbox" id="phone" name="communications" value="phone">
-                        <br>
-                        <input type="checkbox" id="mail" name="communications" value="mail">
-                        <label for="mail">Mail</label>
-                        <br>
-                    </p>
 
-                    <label for="datetime-local">Appointment</label>
+                    <label><input type="checkbox" value="test">Nested Checkbox</label>
+                    <input type="checkbox" id="comm-email" value="email">
+                    <label for="comm-email">Checkbox:</label>
+                    <label>Nested reverse checkbox: <input type="checkbox" name="consent" value="test"></label>
+
+
+                    <label for="phone">Nested checkboxes are also bigger than non nested ones</label>
+                    <input type="checkbox" id="phone">
+                    <br>
+
+                    <label for="datetime-local">Datetime-local:</label>
                     <input type="datetime-local" id="datetime-local" name="datetime">
                     <br>
-                    <label for="week">When would you like to go on vacation?</label>
+                    <label for="week">Week:</label>
                     <input type="week" id="week" name="week">
                     <br>
-                    <label for="month">When is your birthday?</label>
+                    <label for="month">Month:</label>
                     <input type="month" id="month" name="month">
                     <br>
-                    <label for="time">How early do you wake up?</label>
+                    <label for="time">Time:</label>
                     <input type="time" id="time" name="time">
                     <br>
-                    <label for="datetime">What date and time do you want to go?</label>
+                    <label for="datetime">Datetime:</label>
                     <input disabled id="datetime" name="datetime">
-                    <input readonly value="Thank you for your submission.">
                     <br>
+
+                    <input readonly value="readonly input.">
+                    <input disabled value="disabled input.">
+                    <input type="hidden" value="hidden input.">
 
 
 
