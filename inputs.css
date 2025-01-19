@@ -1,13 +1,12 @@
 label {
-    font-size: var(--font-size);
-    min-height: 100%;
+    height: 100%;
+
 
     /* specifically for select multiple */
     vertical-align: top;
 
-    margin: calc(var(--font-size) / 10) 0;
-    /* height: calc(1em + var(--font-size)); */
-    margin-inline-end: .1em;
+    margin: auto;
+
 
     /* when input is nested in label */
     display: inline-flex;
@@ -25,35 +24,47 @@ label {
     flex-shrink: 1;
 }
 
+label:not(:last-child){
+    margin-bottom: .25em;
+}
+
 label:has(select),
 label:has(textarea),
 label:has(input) {
     width: 100%;
 }
 
-label>input[type="radio"],
-label>input[type="checkbox"] {
-    vertical-align: middle;
-    vertical-align: -webkit-baseline-middle;
+label:has(input[type="radio"]),
+label:has(input[type="checkbox"]) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: first baseline;
+    justify-content: flex-start;
 }
+
+label select {
+    flex-grow: 1;
+    margin: 0;
+}
+
+
 
 input {
     flex-grow: 1;
 
     display: inline-flex;
-    position: relative;
 
     /* vertically center input to be centered to adjacent text */
-    vertical-align: baseline;
-    vertical-align: -webkit-baseline-middle;
+    vertical-align: middle;
 
     margin: auto 0;
 
-    min-height: var(--font-size);
+    min-height: 1em;
     height: 100%;
     max-height: 100%;
 
-    min-width: 12em;
+    min-width: 10em;
     /* width: 100%; */
     max-width: 100%;
 
@@ -83,6 +94,10 @@ input {
     resize: none;
     scroll-snap-type: y mandatory;
     scroll-snap-points-y: repeat(100%);
+}
+
+input:not(:last-child){
+    margin-bottom: .25em;
 }
 
 input[disabled] {
@@ -220,7 +235,7 @@ input[type="range"] {
     cursor: pointer;
     border-radius: 12;
     border: none;
-    height: var(--font-size);
+    /* height: 1em; */
     overflow: hidden;
 }
 
@@ -258,31 +273,33 @@ input[type="file"]::-webkit-file-upload-button {
     border-radius: 12px;
 }
 
-input[type="radio"] {
-    min-width: var(--font-size);
-    margin: auto;
-    vertical-align: middle;
-    vertical-align: -webkit-baseline-middle;
+input[type="file"]::-webkit-file-upload-button:hover {
+    cursor: pointer;
+    outline: inset;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    min-width: 1em;
+    margin: auto 0;
 
 
-    /* when nested in a label */
+}
+
+label>input[type="radio"],
+label>input[type="checkbox"] {
+    min-width: min-content;
+    width: 1em;
+
+    margin: auto 0;
+
     flex-grow: 0;
     flex-shrink: 1;
-    margin: 0;
-    align-self: center;
 }
 
-label:has(input[type="radio"]) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-}
 
 
 select {
-    /* display: block; */
-
     font-family: inherit;
     font-size: inherit;
     font-size-adjust: inherit;
@@ -300,34 +317,27 @@ select {
     margin: auto 0;
     vertical-align: baseline;
 
-    min-height: var(--font-size);
+    min-height: 1em;
     height: 100%;
     max-height: 100%;
 
     min-width: 12em;
-    /* width: 100%; */
-}
-
-label select {
-    flex-grow: 1;
-    margin: 0;
 }
 
 select[multiple] {
-    min-height: calc(var(--font-size) * 3);
     height: 100%;
     max-height: 100%;
 }
 
 textarea {
-    /* display: block; */
-
     margin: auto 0;
 
     resize: both;
     overflow: auto;
     overflow-y: auto;
     overflow-x: auto;
+
+    vertical-align: baseline;
 
     font-family: inherit;
     font-size: inherit;
@@ -343,15 +353,7 @@ textarea {
     min-width: 12em;
     /* width: 100%; */
 
-    min-height: calc(var(--font-size) * 3);
+    min-height: calc(1em * 3);
     height: 100%;
     max-height: 100%;
-}
-
-input[type="checkbox"] {
-    min-width: var(--font-size);
-    flex-grow: 0;
-    margin: auto 0;
-    vertical-align: middle;
-    vertical-align: -webkit-baseline-middle;
 }

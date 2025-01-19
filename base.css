@@ -23,15 +23,9 @@
 
  */
 
-@import url('./table.css');
-@import url('./inputs.css');
-@import url('media.css');
-@import url('block.css');
-@import url('typography.css');
 
 :root {
     --border-radius: calc(24em/54);
-    --font-size: 1.2em;
 }
 
 @font-face {
@@ -69,13 +63,7 @@
     src: url("fonts/Corbert-Regular.ttf");
 }
 
-html {
-    font-family: corbert, Madelyn, Tahoma, Geneva, Verdana, system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    font-size: var(--font-size);
-    line-height: 1.5;
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 
 /* resouerces
@@ -86,8 +74,8 @@ html {
 progress,
 meter {
     min-height: 100%;
-    height: calc(var(--font-size)*1.25);
-    min-width: var(--font-size);
+    height: calc(1em*1.25);
+    min-width: 1em;
     max-width: 100%;
 
     /* width: 100%; */

@@ -323,12 +323,14 @@
 
 
                     <label><input type="checkbox" value="test">Nested Checkbox</label>
+
                     <input type="checkbox" id="comm-email" value="email">
-                    <label for="comm-email">Checkbox:</label>
+                    <label for="comm-email">Checkbox</label>
+
                     <label>Nested reverse checkbox: <input type="checkbox" name="consent" value="test"></label>
 
 
-                    <label for="phone">Nested checkboxes are also bigger than non nested ones</label>
+                    <label for="phone">Nested checkboxes are also bigger than non nested ones:</label>
                     <input type="checkbox" id="phone">
                     <br>
 
@@ -361,19 +363,19 @@
             </section>
             <section>
                 <h2>Media</h2>
-                <img src="https://imges.picture/top/1" alt="unavailble image">
+                <img src="https://imges.picture/top/1" alt="unavailable img">
                 <p>Below we got some ultra high-def large images coming from <a href="unslpash.com">unsplash.com</a> and
                     <a href="kaboompics.com">kaboompics.com</a>. You can expect some page jumps; you should be using the
                     <code>width</code> and <code>height</code> attributes to prevent this.
                 </p>
                 <img src="https://images.unsplash.com/photo-1478061653917-455ba7f4a541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Placeholder">
+                    alt="Placeholder" loading="eager">
 
                 <p>Notice the image above and below are very large but will always be contained within the viewport and
                     maintain their aspect ratio 😊.</p>
 
                 <figure>
-                    <img src="https://kaboompics.com/download/bcb65ca6f173aeddb1894d4d1ef8b1c9/original"
+                    <img src="https://kaboompics.com/download/bcb65ca6f173aeddb1894d4d1ef8b1c9/original" loading="lazy"
                         alt="Placeholder">
                     <figcaption>The image above is in a <code>figure</code> (and this is a <code>figcaption</code>).
                         This make the image visually centered otherwise the will be aligned to the reading direction.
