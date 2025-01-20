@@ -10,6 +10,7 @@
 @import url('typography.css');
 @import url('list.css');
 @import url('print.css');
+@import url("dark.css");
 
 body nav {
     display: flex;
@@ -97,4 +98,12 @@ dialog {
     position: fixed;
     margin: auto;
     z-index: 100;
+}
+
+html,
+body {
+    background-color: var(--background);
+    color: var(--text);
+
+    scrollbar-color: var(--shadow) var(--shell);
 }

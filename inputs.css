@@ -26,7 +26,7 @@ label {
     flex-shrink: 1;
 }
 
-label:not(:last-child){
+label:not(:last-child) {
     margin-bottom: .25em;
 }
 
@@ -56,6 +56,9 @@ input {
     flex-grow: 1;
 
     display: inline-flex;
+
+    background-color: var(--shell);
+    color: inherit;
 
     /* vertically center input to be centered to adjacent text */
     vertical-align: middle;
@@ -97,7 +100,7 @@ input {
     scroll-snap-points-y: repeat(100%);
 }
 
-input:not(:last-child){
+input:not(:last-child) {
     margin-bottom: .25em;
 }
 
@@ -284,13 +287,13 @@ input[type="checkbox"] {
     min-width: 1em;
     margin: auto 0;
 
-
+    min-width: min-content;
+    width: 1em;
 }
 
 label>input[type="radio"],
 label>input[type="checkbox"] {
-    min-width: min-content;
-    width: 1em;
+
 
     margin: auto 0;
 
@@ -313,6 +316,9 @@ select {
     border-style: solid;
     border-width: .1em;
     border-color: inherit;
+
+    background-color: var(--shell);
+    color: inherit;
 
     padding: .1em;
     margin: auto 0;
@@ -349,6 +355,9 @@ textarea {
     border-style: solid;
     border-width: 1px;
     border-color: inherit;
+
+    background-color: var(--shell);
+    color: inherit;
 
     flex-grow: 1;
 

@@ -7,6 +7,10 @@ body {
     font-style: normal;
 }
 
+a{
+    color: var(--info);
+}
+
 code,
 pre {
     font-family: inherit;

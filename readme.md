@@ -52,8 +52,8 @@ or clone the repo and download the file and link to it locally.
 
 - [x] basics [styling]
 - [x] colours
-- [ ] printer friendly
-- [ ] dark-mode
+- [x] printer friendly
+- [x] dark-mode
 - [ ] Catppuccin compliance
 - [ ] ⭐style✨
 - [x] responsive
