@@ -88,7 +88,7 @@ input {
     border-style: solid;
     box-shadow: none;
     border-width: .1em;
-    border-color: inherit;
+    border-color: var(--shadow);
 
     input-security: auto;
 
@@ -315,7 +315,7 @@ select {
     border-radius: var(--border-radius);
     border-style: solid;
     border-width: .1em;
-    border-color: inherit;
+    border-color: var(--shadow);
 
     background-color: var(--shell);
     color: inherit;
@@ -354,7 +354,8 @@ textarea {
     border-radius: var(--border-radius);
     border-style: solid;
     border-width: 1px;
-    border-color: inherit;
+    border-color: var(--shadow);
+
 
     background-color: var(--shell);
     color: inherit;

@@ -13,6 +13,9 @@
 @import url("dark.css");
 
 body nav {
+    position: sticky;
+    top: 0;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,6 +23,8 @@ body nav {
     padding: 0.5em;
     background-color: var(--shell);
     border-bottom: 1px solid var(--shadow);
+
+    border-radius: var(--border-radius);
 }
 
 body nav ul {
@@ -48,8 +53,13 @@ button {
     height: 100%;
     max-height: 100vh;
     padding: calc(1em/1.5) calc(1em*1.75);
-    border-style: solid;
-    border-width: 0.10em;
+
+    cursor: pointer;
+
+    border-style: outset;
+    border-width: .15em;
+    color: var(--text);
+
     border-radius: 99999999px;
     border-color: var(--black);
 
