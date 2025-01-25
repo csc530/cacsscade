@@ -1,79 +1,63 @@
 :root {
-    /* CSS HEX */
-    --cerise: #d94165ff;
-    --bright-pink-crayola: #ef476fff;
-    --sunglow: #ffd166ff;
-    --mantis: #83d483ff;
-    --emerald: #06d6a0ff;
-    --light-sea-green: #0cb0a9ff;
-    --cornflower-blue: #788bffff;
-    --blue-ncs: #118ab2ff;
-    --cerulean: #0c637fff;
-    --midnight-green: #073b4cff;
-    --midnight-green-2: #1e4d5cff;
-    --egg-shell: #FCFCFB;
-    /* --white-smoke: #f5f5f5ff; */
-    --white-smoke: #F6F4F5;
-    --ivory: #fffff2ff;
-    --alabaster: #DFDFD5;
-    --platinum: #E6E6E6;
-    /* --platinum: #e5e5e5ff; */
-    --anti-flash-white: #F0F0F0;
-    --timberwolf: #D8D8D8;
-    /* --silver: #C0C0C0; */
-    /* --silver: #B0B0B0; */
-    --silver: #A5A5A5;
-    --sea-salt: #F8F8F8;
-    --french-gray: #C3BFCB;
-    --charcoal: #424b54ff;
-    --rich-black: #101018;
-    --night: #101010;
-    --black: #060A0B;
+	--cerise: #d93f65;
+	--bright-pink-crayola: #ef476f;
+	--sunglow: #ffd166;
+	--mantis: #83d483;
+	--emerald: #06d6a0;
+	--light-sea-green: #0cb0a9;
+	--cornflower-blue: #788bff;
+	--blue-ncs: #118ab2;
+	--cerulean: #0c637f;
+	--midnight-green: #073b4c;
+	--midnight-green-2: #1e4d5c;
+	--egg-shell: #fcfcfb;
+	--white-smoke: #f6f4f5;
+	--ivory: #fffff2;
+	--alabaster: #dfdfd5;
+	--platinum: #e6e6e6;
+	--anti-flash-white: #f0f0f0;
+	--timberwolf: #d8d8d8;
+	--silver: #a5a5a5;
+	--sea-salt: #f8f8f8;
+	--french-gray: #c3bfcb;
+	--charcoal: #414a53;
+	--rich-black: #101018;
+	--night: #101010;
+	--ninja: #0f0f0f;
+	--gunmetal: #020202;
+	--licorice: #150b09;
+	--smoky-black: #110a08;
+	--raisin-black: #342e37;
+	--pitch-black: #010b0e;
+	--graynum: #1c1f2d;
+	--cal-poly-green: #0d4c31;
+	--blood-red: #5b0800;
+	--madder: #9c0e2f;
+	--dark-goldenrod: #c68b00;
+	--viridian: #047f5e;
 
-    /* CSS HSL */
-    --cerise: hsla(346, 67%, 55%, 1);
-    --bright-pink-crayola: hsla(346, 84%, 61%, 1);
-    --sunglow: hsla(42, 100%, 70%, 1);
-    --mantis: hsla(120, 49%, 67%, 1);
-    --emerald: hsla(164, 95%, 43%, 1);
-    --light-sea-green: hsla(177, 87%, 37%, 1);
-    --blue-ncs: hsla(195, 83%, 38%, 1);
-    --cerulean: hsla(195, 83%, 27%, 1);
-    --midnight-green: hsla(195, 83%, 16%, 1);
-    --midnight-green-2: hsla(195, 51%, 24%, 1);
-    --ivory: hsla(60, 100%, 97%, 1);
-    --charcoal: hsla(210, 12%, 29%, 1);
-    --cornflower-blue: hsla(232, 100%, 74%, 1);
+	/* context  */
+	--black: var(--rich-black);
+	--white: var(--egg-shell);
+	--accent: var(--black);
 
-    /*  */
-    --primary: var(--light-sea-green);
-    --secondary: var(--blue-ncs);
-    --tertiary: var(--bright-pink-crayola);
-    --quaternary: var(--sunglow);
-    --quinary: var(--midnight-green);
+	--primary: var(--light-sea-green);
+	--secondary: var(--mantis);
+	--tertiary: var(--bright-pink-crayola);
+	--quaternary: var(--sunglow);
+	--quinary: var(--cornflower-blue);
 
-    /* colours */
-    --black: var(--rich-black);
-    --white: var(--egg-shell);
+	--text: var(--charcoal);
+	--background: var(--white-smoke);
 
-    /* context */
-    --text: var(--charcoal);
-    --background: var(--white-smoke);
+	--danger: var(--bright-pink-crayola);
+	--error: var(--danger);
+	--warning: var(--sunglow);
+	--success: var(--emerald);
+	--info: var(--blue-ncs);
 
-    --danger: var(--bright-pink-crayola);
-    --error: var(--cerise);
-    --warning: var(--sunglow);
-    --success: var(--emerald);
-    --info: var(--blue-ncs);
-
-    --sparkle: var(--blue-ncs);
-    --shell: var(--sea-salt);
-    --shade: var(--timberwolf);
-    --shadow: var(--silver);
-}
-
-
-
-table:nth-child(even) {
-    background-color: var(--background);
+	--sparkle: var(--cornflower-blue);
+	--shell: var(--sea-salt);
+	--shade: var(--timberwolf);
+	--shadow: var(--silver);
 }
