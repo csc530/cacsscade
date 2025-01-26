@@ -19,6 +19,7 @@ body {
 :link {
 	color: var(--quinary);
 }
+
 a:active,
 button:active {
 	color: var(--primary);
@@ -69,6 +70,8 @@ p,
 code,
 pre {
 	font-size: 1rem;
+	overflow-wrap: break-word;
+	word-break: auto-phrase;
 }
 
 h1,
@@ -78,7 +81,7 @@ h4,
 h5,
 h6 {
 	text-align: justify;
-text-wrap: balance;
+	text-wrap: balance;
 }
 
 article > h1,

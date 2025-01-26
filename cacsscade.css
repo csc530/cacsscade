@@ -108,7 +108,6 @@ html,
 body {
 	background-color: var(--background);
 	color: var(--text);
-overflow-wrap: break-word;
-word-break: auto-phrase;
 	scrollbar-color: var(--shadow) var(--shell);
+	overflow-x: hidden;
 }
