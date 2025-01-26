@@ -21,16 +21,10 @@ header:not(:last-child),
 footer:not(:last-child),
 main:not(:last-child),
 nav:not(:last-child),
-/* aside:not(:last-child) */
-	p:not(:last-child),
-h1:not(:last-child),
-h2:not(:last-child),
-h3:not(:last-child),
-h4:not(:last-child),
-h5:not(:last-child),
-h6:not(:last-child) {
+aside:not(:last-child),
+p:not(:last-child) {
 	/* border: 1px solid black; */
-	margin-bottom: 1.25em;
+	margin-bottom: 1em;
 }
 
 article {
@@ -66,4 +60,32 @@ aside {
 	aside {
 		float: left;
 	}
+}
+
+details {
+	box-sizing: border-box;
+	border: 0.1em solid var(--shadow);
+	padding: 1em;
+	background-color: var(--shell);
+	box-shadow: 0 0 8px 0 var(--shadow);
+	border-radius: var(--border-radius);
+}
+
+/* details:not([open]), */
+/* details::marker, */
+details > summary {
+	/* outline:auto; */
+	list-style-position: outside;
+	margin-inline-start: 1em;
+	text-align: justify;
+}
+
+details::marker {
+	color: var(--accent);
+}
+
+details[open] {
+	/* border-inline-start-width: 2px;
+	border-inline-start-style: solid;
+	border-inline-start-color: var(--shade); */
 }

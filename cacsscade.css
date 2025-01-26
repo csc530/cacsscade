@@ -11,6 +11,14 @@
 @import url("list.css");
 @import url("print.css");
 @import url("dark.css");
+@import url("mouse.css");
+
+html,
+* {
+	transition-timing-function: ease-in-out;
+	transition-behavior: smooth;
+	transition-duration: 0.25s;
+}
 
 body nav {
 	position: sticky;
@@ -71,21 +79,11 @@ button {
 }
 
 button:focus {
-	background-color: var(--shade);
-	border-color: var(--primary);
-}
-
-button:hover {
-	border-style: inset;
-	background-color: var(--shadow);
-}
-
-a:hover {
-	/* make link bold */
-	font-weight: 550;
-
-	/* stronger underline */
-	text-decoration: underline wavy;
+	/* background-color: var(--shade); */
+	/* border-color: var(--primary); */
+	outline-color: var(--primary);
+	outline-style: solid;
+	outline-width: 3px;
 }
 
 dialog[open]::backdrop {
@@ -100,12 +98,10 @@ dialog[open]::backdrop {
 }
 
 dialog {
-	/* background-color: white; */
-	border-radius: 5%;
+	border-radius: var(--border-radius);
 	padding: 5em;
 	position: fixed;
 	margin: auto;
-	z-index: 100;
 }
 
 html,

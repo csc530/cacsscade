@@ -1,93 +1,109 @@
 /* print[er] styles */
 
 @page {
-    /* size: landscape; */
-    margin: 0.1em;
+	/* size: landscape; */
+	margin: 0.1em;
 }
 
 @media print {
-    :root {
-        --shell: transparent --shade: gray;
-        --shadow: black;
-        --background: white;
-        --text: black;
+	:root {
+		--shell: transparent;
+		--shade: gray;
+		--shadow: black;
+		--background: white;
+		--text: black;
 
-        --danger: red;
-        --error: red;
-        --warning: yellow;
-        --success: green;
-        --info: blue;
+		--danger: red;
+		--error: red;
+		--warning: yellow;
+		--success: green;
+		--info: blue;
+	}
 
+	table {
+		display: table;
+		width: fit-content;
+		max-width: 100%;
+
+		border-style: solid;
+		border-collapse: collapse;
+		border-width: 1px;
+	}
+
+	td {
+		word-break: keep-all;
+		word-wrap: break-word;
+		line-break: loose;
+		text-wrap-mode: wrap;
+		text-wrap-style: stable;
+	}
+
+	th[scope="col"],
+	th[scope="colgroup"],
+	th[scope="row"],
+	th[scope="rowgroup"] {
+		max-width: 100%;
+		z-index: 1;
+		position: relative;
+	}
+
+	tbody tr:nth-child(odd),
+	tbody tr:nth-child(even),
+	tr {
+		page-break-inside: avoid;
+		background-color: transparent;
+	}
+
+	audio {
+		display: none;
+		visibility: hidden;
+	}
+
+	audio::after {
+		content: "Audio: " attr(src);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		break-after: avoid-page;
+	}
+
+	pre,
+	code {
+		break-inside: auto;
+	}
+
+	a[href^="https://"]:after,
+	a[href^="http://"]:after {
+		content: " (" attr(href) ")";
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	q,
+	blockquote {
+		widows: 3;
+		orphans: 3;
+	}
+}
+  h5,
+    h6,
+    p,
+    q,
+    blockquote {
+        widows: 3;
+        orphans: 3;
     }
-
-    table {
-        display: table;
-        width: fit-content;
-        max-width: 100%;
-
-        border-style: solid;
-        border-collapse: collapse;
-        border-width: 1px;
-    }
-
-    td {
-        word-break: keep-all;
-        word-wrap: break-word;
-        line-break: loose;
-        text-wrap-mode: wrap;
-        text-wrap-style: stable;
-    }
-
-    th[scope="col"],
-    th[scope="colgroup"],
-    th[scope="row"],
-    th[scope="rowgroup"] {
-        max-width: 100%;
-        z-index: 1;
-        position: relative;
-    }
-
-
-    tbody tr:nth-child(odd),
-    tbody tr:nth-child(even),
-    tr {
-        page-break-inside: avoid;
-        background-color: transparent;
-    }
-
-    audio {
-        display: none;
-        visibility: hidden;
-    }
-
-    audio::after {
-        content: "Audio: " attr(src);
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        break-after: avoid-page;
-    }
-
-    pre,
-    code {
-        break-inside: auto;
-    }
-
-    a[href^="https://"]:after,
-    a[href^="http://"]:after {
-        content: " (" attr(href) ")";
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
+}5,
     h6,
     p,
     q,

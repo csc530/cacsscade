@@ -1,90 +1,80 @@
-dl{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr;
-    grid-auto-flow: row;
-
-    row-gap: 1em;
-    column-gap: 0.1em;
-
-    margin: auto;
-
-    width: fit-content;
-
-    list-style-position: outside;
+dl {
+	width: fit-content;
+	list-style-position: inside;
 }
 
-dt{
-    display: list-item;
-    width: fit-content;
-    width: 100%;
-    font-weight: bold;
-    margin-inline-start: 2em;
-    list-style-type: definition;
+dt {
+	display: list-item;
+	width: fit-content;
+	width: 100%;
+	font-weight: bold;
+	list-style-type: definition;
 }
 
-dt::after{
-    content: "";
+dt + dt {
+	list-style-type: none;
 }
 
-dd{
-    display: list-item;
-    list-style-type: definition-desc;
-    margin-inline-start: 1.25em;
+dt::after {
+	content: "";
+}
+
+dd {
+	display: list-item;
+	list-style-type: definition-desc-under;
+	margin-inline-start: 1.25em;
 }
 
 @counter-style unordered {
-    system: cyclic;
-    symbols: "●";
-    suffix: " ";
+	system: cyclic;
+	symbols: "●";
+	suffix: " ";
 }
 
 @counter-style unordered-emphasis {
-    system: cyclic;
-    symbols: "◆";
-    suffix: " ";
+	system: cyclic;
+	symbols: "◆";
+	suffix: " ";
 }
 
 @counter-style unordered-strong {
-    system: cyclic;
-    symbols: "★";
-    suffix: " ";
+	system: cyclic;
+	symbols: "★";
+	suffix: " ";
 }
 
 @counter-style unordered-strong-emphasis {
-    system: cyclic;
-    symbols: "★◆";
-    suffix: " ";
+	system: cyclic;
+	symbols: "★◆";
+	suffix: " ";
 }
 
 @counter-style unordered-emphasis-strong {
-    system: cyclic;
-    symbols: "◆★";
-    suffix: " ";
+	system: cyclic;
+	symbols: "◆★";
+	suffix: " ";
 }
 
 @counter-style circled-alpha {
-    system: fixed;
-    symbols: ⓐ ⓑ ⓒ ⓓ ⓔ ⓕ ⓖ ⓗ ⓘ ⓙ ⓚ ⓛ ⓜ ⓝ ⓞ ⓟ ⓠ ⓡ ⓢ ⓣ ⓤ ⓥ ⓦ ⓧ ⓨ ⓩ;
-    suffix: " ";
+	system: fixed;
+	symbols:
+		"ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ", "ⓕ", "ⓖ", "ⓗ", "ⓘ", "ⓙ", "ⓚ", "ⓛ", "ⓜ", "ⓝ", "ⓞ", "ⓟ", "ⓠ", "ⓡ", "ⓢ", "ⓣ", "ⓤ", "ⓥ", "ⓦ", "ⓧ", "ⓨ", "ⓩ";
+	suffix: " ";
 }
 
 @counter-style definition {
-    system: cyclic;
-    symbols: "◈";
-    suffix: " ";
-    s: "?⁇▶▷❔❓";
+	system: cyclic;
+	symbols: "◈";
+	suffix: " ";
 }
 
 @counter-style definition-desc {
-    system: cyclic;
-    symbols: "—";
-    suffix: " ";
-    s: "→ ⇰⇢⇨▰▱◈◇◆⁝…¬";
+	system: cyclic;
+	symbols: "—";
+	suffix: " ";
 }
 @counter-style definition-desc-under {
-    system: cyclic;
-    symbols: "↪";
-    suffix: " ";
-    s: "?⁇▶▷❔❓";
+	system: cyclic;
+	symbols: "↪";
+	suffix: " ";
 }

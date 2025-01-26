@@ -1,0 +1,32 @@
+@media (any-hover: hover) {
+	button:hover {
+		border-style: inset;
+		background-color: var(--shadow);
+	}
+
+	:any-link:hover {
+		text-decoration: underline wavy;
+		text-decoration-line: underline;
+		text-decoration-style: wavy;
+		cursor: pointer;
+	}
+
+	input:hover,
+	textarea:hover,
+	select:hover {
+		outline-color: var(--accent);
+		outline-style: solid;
+		outline-width: 3px;
+	}
+
+	details:hover:not([open]) {
+		outline-color: var(--accent);
+		outline-style: solid;
+		outline-width: 3px;
+	}
+
+	details[open]:hover {
+		/* shade var colour box shadow on the bottom and sides of the element */
+		/* box-shadow: inset 0 0 0 3px var(--accent); */
+	}
+}
