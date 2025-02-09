@@ -4,8 +4,8 @@ table {
 
 	box-sizing: border-box;
 
-	table-layout: auto;
-	width: max-content;
+	table-layout: fixed;
+	width: 100%;
 	max-width: 100%;
 
 	height: 100%;
@@ -20,14 +20,32 @@ table {
 
 	outline: none;
 
-	white-space: normal;
+	white-space-collapse: collapse;
+	white-space: collapse;
 	text-wrap-style: pretty;
 	text-wrap-mode: wrap;
+	/* for large tables on small screens */
+	word-break: keep-all;
+	line-break: loose;
+	text-justify: auto;
+	text-wrap-mode: wrap;
+	text-wrap-style: pretty;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+
 
 	/* keeps exterior edges rounded */
-	/* border-collapse: collapse; */
+	border-collapse: separate;
 	border-spacing: 0;
 
+	overflow: auto;
+}
+
+table > :first-child > tr:first-child > :is(td,th),
+table > :last-child > tr:last-child > :is(td,th),
+table > :is(tr:first-child,tr:last-child) > :is(td,th),
+table > caption + :first-of-type  :is(td,th){
+	resize: both;
 	overflow: auto;
 }
 
@@ -39,16 +57,13 @@ table caption {
 
 thead,
 tfoot {
-	display: table-header-group;
 	vertical-align: middle;
 
 	text-align: center;
-	width: 100%;
+	border-collapse: collapse;
 }
 
 tbody {
-	display: table-row-group;
-	max-width: 100%;
 	vertical-align: middle;
 	border-collapse: collapse;
 }
@@ -114,15 +129,22 @@ caption + :is(thead, tbody) > tr:first-child > :is(td, th):last-child {
 	border-end-start-radius: calc(var(--border-radius) / 2.4);
 }
 
-td {
-	box-sizing: border-box;
+td,th{
+	box-sizing: content-box;
+	vertical-align: middle;
+	border-collapse: collapse;
+
+	/* min-width: min-content; */
 	width: fit-content;
 	max-width: 100%;
+}
+
+td {
+
 
 	border-width: .01em;
 	border-style: solid;
 	border-color: inherit;
-	border-collapse: collapse;
 	empty-cells: show;
 }
 
