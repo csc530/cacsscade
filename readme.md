@@ -7,7 +7,7 @@ It [may] also help incentivize/promote cleaner semantic HTML.
 ## licenses
 
 All fonts within the repo are 100% free to use and are from <dafont.com>.
-This project is licensed under [GNU AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html).
+This project is licensed **under** [GNU AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html).
 
 ## Superiors
 
