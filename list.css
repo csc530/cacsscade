@@ -73,6 +73,7 @@ dd {
 	symbols: "—";
 	suffix: " ";
 }
+
 @counter-style definition-desc-under {
 	system: cyclic;
 	symbols: "↪";

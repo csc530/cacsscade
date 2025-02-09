@@ -23,48 +23,59 @@
 
  */
 
-
 :root {
-    --border-radius: calc(24em/54);
+	--border-radius: calc(24em / 54);
+}
+
+/* fantasy font */
+@font-face {
+	font-family: madelyn;
+	src: url("fonts/Madelyn.otf");
+}
+
+/* serif font */
+@font-face {
+	font-family: tess;
+	src: url("fonts/tess/Tess.otf");
+}
+
+/* monospace font */
+@font-face {
+	font-family: natural-mono;
+	src: url("fonts/natural_mono/Natural Mono-Regular.ttf");
+}
+
+/* sans-serif; base font */
+@font-face {
+	font-family: corbert;
+	src: url("fonts/Corbert-Regular.ttf");
 }
 
 @font-face {
-    font-family: Madelyn;
-    src: url("fonts/Madelyn.otf");
+	font-family: super-chill;
+	src: url("fonts/super-chill.otf");
 }
 
 @font-face {
-    font-family: chill;
-    src: url("fonts/super-chill.otf");
+	font-family: rude;
+	src: url("fonts/rude.otf");
 }
 
 @font-face {
-    font-family: rude;
-    src: url("fonts/rude.otf");
+	font-family: scribble;
+	src: url("fonts/scribble.otf");
+}
+
+/* impact font */
+@font-face {
+	font-family: sugar;
+	src: url("fonts/sugar/dissolve.ttf");
 }
 
 @font-face {
-    font-family: scribble;
-    src: url("fonts/scribble.otf");
+	font-family: wonderland;
+	src: url("fonts/WONDERLANDPRO-Regular.ttf");
 }
-
-@font-face {
-    font-family: sugar;
-    src: url("fonts/sugar.otf");
-}
-
-@font-face {
-    font-family: wonderland;
-    src: url("fonts/WONDERLANDPRO-Regular.ttf");
-}
-
-@font-face {
-    font-family: corbert;
-    src: url("fonts/Corbert-Regular.ttf");
-}
-
-
-
 
 /* resouerces
 
@@ -73,146 +84,137 @@
 
 progress,
 meter {
-    min-height: 100%;
-    height: calc(1em*1.25);
-    min-width: 1em;
-    max-width: 100%;
+	min-height: 100%;
+	height: calc(1em * 1.25);
+	min-width: 1em;
+	max-width: 100%;
 
-    /* width: 100%; */
+	/* width: 100%; */
 
-    /* cursor: progress; */
+	/* cursor: progress; */
 
-    /* border-radius: var(--border-radius); */
+	/* border-radius: var(--border-radius); */
 
-    /* accent-color: var(--success); */
+	/* accent-color: var(--success); */
 }
 
-
 progress {
-    cursor: progress;
-    color: var(--success);
+	cursor: progress;
+	color: var(--success);
 
-    /* outline:violet; */
+	/* outline:violet; */
 
-    /* border-radius: var(--border-radius); */
+	/* border-radius: var(--border-radius); */
 
-    /* background-color: brown; */
+	/* background-color: brown; */
 
-    /* accent-color: var(--success); */
+	/* accent-color: var(--success); */
 }
 
 progress::-webkit-progress-bar {
-    /* outline: brown; */
-    border-radius: var(--border-radius);
-    border-color: var(--shadow);
+	/* outline: brown; */
+	border-radius: var(--border-radius);
+	border-color: var(--shadow);
 }
 
 progress::-webkit-progress-value {
-    outline: green;
-    background-color: var(--success);
-    color: var(--success);
-    border-radius: var(--border-radius);
+	outline: green;
+	background-color: var(--success);
+	color: var(--success);
+	border-radius: var(--border-radius);
 }
 
 progress::-webkit-progress-inner-element {
-    /* outline: pink; */
+	/* outline: pink; */
 
-    /* background-color: var(--shade); */
-    border-radius: var(--border-radius);
+	/* background-color: var(--shade); */
+	border-radius: var(--border-radius);
 }
 
-
 progress::-moz-progress-bar {
-    /* outline: green; */
-    -color: var(--success);
+	/* outline: green; */
+	-color: var(--success);
 
-    /* border-radius: var(--border-radius); */
-    width: 100%;
-    height: 100%;
+	/* border-radius: var(--border-radius); */
+	width: 100%;
+	height: 100%;
 }
 
 progress::-ms-fill {
-    outline: green;
+	outline: green;
 
-    /* background-color: var(--success); */
-    border-radius: var(--border-radius);
+	/* background-color: var(--success); */
+	border-radius: var(--border-radius);
 }
-
-
-
 
 /* !! non-standard(?) */
 progress::-webkit-progress-inner-value {
-    outline: pink;
+	outline: pink;
 
-    /* background-color: var(--shade); */
-    border-radius: var(--border-radius);
+	/* background-color: var(--shade); */
+	border-radius: var(--border-radius);
 }
 
 progress::-moz-range-progress {
-    outline: green;
+	outline: green;
 
-    /* background-color: var(--success); */
-    border-radius: var(--border-radius);
+	/* background-color: var(--success); */
+	border-radius: var(--border-radius);
 }
 
-
-
-
 meter::-webkit-meter-bar {
-    /* background-color: var(--shade); */
+	/* background-color: var(--shade); */
 
-    /* outline: auto; */
-    border-color: var(--shadow);
-    border-radius: var(--border-radius);
-    border-width: 1.5px;
-    border-style: solid;
+	/* outline: auto; */
+	border-color: var(--shadow);
+	border-radius: var(--border-radius);
+	border-width: 1.5px;
+	border-style: solid;
 }
 
 meter::-webkit-meter-optimum-value {
-    /* outline: auto; */
-    background-color: var(--success);
-    border-radius: 0;
-    border-radius: var(--border-radius);
+	/* outline: auto; */
+	background-color: var(--success);
+	border-radius: 0;
+	border-radius: var(--border-radius);
 }
 
 meter::-webkit-meter-suboptimum-value {
-    /* outline: auto; */
-    background-color: var(--warning);
-    border-radius: 0;
-    border-radius: var(--border-radius);
+	/* outline: auto; */
+	background-color: var(--warning);
+	border-radius: 0;
+	border-radius: var(--border-radius);
 }
 
 meter::-webkit-meter-even-less-good-value {
-    /* outline: auto; */
-    background-color: var(--danger);
-    border-radius: 0;
-    border-radius: var(--border-radius);
+	/* outline: auto; */
+	background-color: var(--danger);
+	border-radius: 0;
+	border-radius: var(--border-radius);
 }
 
 meter::-moz-meter-bar {
-    /* background-color: var(--shade); */
-
-    /* outline: auto; */
+	/* background-color: var(--shade); */
+	/* outline: auto; */
 }
 
 meter::-moz-meter-optimum-value {
-    /* outline: auto; */
-    background-color: var(--success);
-    border-radius: 0;
-    border-radius: var(--border-radius);
+	/* outline: auto; */
+	background-color: var(--success);
+	border-radius: 0;
+	border-radius: var(--border-radius);
 }
 
 meter::-moz-meter-suboptimum-value {
-    /* outline: auto; */
-    background-color: var(--warning);
-    border-radius: 0;
-    border-radius: var(--border-radius);
+	/* outline: auto; */
+	background-color: var(--warning);
+	border-radius: 0;
+	border-radius: var(--border-radius);
 }
 
 meter::-moz-meter-even-less-good-value {
-    /* outline: auto; */
-    background-color: var(--danger);
-    border-radius: 0;
-    border-radius: var(--border-radius);
+	/* outline: auto; */
+	background-color: var(--danger);
+	border-radius: 0;
+	border-radius: var(--border-radius);
 }

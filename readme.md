@@ -4,6 +4,11 @@ A clean classless classy cascading style sheet for a lil' pazazz you need on the
 
 It [may] also help incentivize/promote cleaner semantic HTML.
 
+## licenses
+
+All fonts within the repo are 100% free to use and are from <dafont.com>.
+This project is licensed under [GNU AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html).
+
 ## Superiors
 
 - [Tacit](https://github.com/yegor256/tacit): tactful, and it just works (I stole your html page to test against thx🙇🏿‍♂️🙏🏿)
@@ -23,6 +28,7 @@ But with some intentional markup changes beautiful pages a cascade away.
 ---
 
 - [🧼 casCSSade 🫧](#-cascssade-)
+  - [licenses](#licenses)
   - [Superiors](#superiors)
   - [opinions 🤮](#opinions-)
   - [usage](#usage)

@@ -1,6 +1,6 @@
 table {
 	/* allows for overflow scrolling */
-	display: block;
+	display: table;
 
 	box-sizing: border-box;
 
@@ -16,7 +16,7 @@ table {
 	border-style: solid;
 	border-radius: var(--border-radius);
 	border-color: var(--shadow);
-	border-width: .2em;
+	border-width: .25em;
 
 	outline: none;
 
@@ -25,7 +25,7 @@ table {
 	text-wrap-mode: wrap;
 
 	/* keeps exterior edges rounded */
-	border-collapse: collapse;
+	/* border-collapse: collapse; */
 	border-spacing: 0;
 
 	overflow: auto;
@@ -85,6 +85,33 @@ th[scope="rowgroup"] {
 	right: 100%;
 	z-index: 1;
 	position: sticky;
+}
+
+/* pseudo collapse with table's borders */
+tbody,
+thead,
+tfoot {
+	border-collapse: collapse;
+}
+
+thead {
+	border-start-start-radius: var(--border-radius);
+	border-start-end-radius: var(--border-radius);
+}
+
+:is(thead, tbody):first-child > tr:first-child > :is(td, th):first-child,
+caption + :is(thead, tbody) > tr:first-child > :is(td, th):first-child {
+	border-start-start-radius: calc(var(--border-radius) / 2.4);
+}
+:is(thead, tbody):first-child > tr:first-child > :is(td, th):last-child,
+caption + :is(thead, tbody) > tr:first-child > :is(td, th):last-child {
+	border-start-end-radius: calc(var(--border-radius) / 2.4);
+}
+:is(tfoot, tbody):last-child > tr:last-child > :is(td, th):last-child {
+	border-end-end-radius: calc(var(--border-radius) / 2.4);
+}
+:is(tfoot, tbody):last-child > tr:last-child > :is(td, th):first-child {
+	border-end-start-radius: calc(var(--border-radius) / 2.4);
 }
 
 td {

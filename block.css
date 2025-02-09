@@ -1,17 +1,12 @@
 body {
 	box-sizing: border-box;
-
 	width: 100vw;
 	max-width: 100%;
-
 	min-height: 100%;
 	height: 100vh;
-
 	margin: 0;
-	padding: 1em;
-
-	overflow-x: hidden;
-	overflow-y: auto;
+	padding-inline: 1em;
+	overflow: hidden auto;
 }
 
 section:not(:last-child),
@@ -38,12 +33,11 @@ article {
 aside {
 	min-width: min-content;
 	width: 15%;
-
 	padding: 0.5em;
-
 	padding-left: 0.65em;
 	margin-left: 0.5em;
 	box-shadow: inset 5px 0 5px -5px var(--shadow);
+
 	/* font-style: italic; */
 	color: var(--primary);
 	float: inline-end;
@@ -72,6 +66,7 @@ details {
 }
 
 /* details:not([open]), */
+
 /* details::marker, */
 details > summary {
 	/* outline:auto; */

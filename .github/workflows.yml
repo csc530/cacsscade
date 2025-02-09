@@ -1,0 +1,36 @@
+name: Build CSS Bundle
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read # access to check out code and install dependencies
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+      - uses: actions/checkout@v2
+
+      - name: Bundle & Minify CSS
+      - uses: oven-sh/setup-bun@v2
+            with:
+                bun-version: latest
+      - run: bunx lightningcss --bundle --minify cacsscade.css --output-file cacsscade.min.css
+
+      - name: Upload Artifact
+      - uses: actions/upload-artifact@v2  # upload the bundle
+        with:
+          name: cacsscade.min.css
+          path: cacsscade.min.css
+
+      - name: Push changes
+      run: |
+        git config --global user.name "GH workflow"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add cacsscade.min.css; git commit -m "build {{ github.sha }} bundle"
+        git push

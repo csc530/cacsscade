@@ -10,9 +10,7 @@
 	},
 	"scripts": {
 		"lint": "stylelint *.css && java -jar node_modules/vnu-jar/build/dist/vnu.jar index.html",
-		"lint:compact": "csslint --formatter=compact *.css",
-		"fix": "stylelint *.css --fix strict",
-		"fix:chill": "csslint*.css --fix lax"
+		"fix": "stylelint [!.min]*.css --fix strict"
 	},
 	"trustedDependencies": ["@biomejs/biome"]
 }

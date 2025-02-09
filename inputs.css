@@ -1,4 +1,4 @@
-fieldset{
+fieldset {
 	background-color: var(--shell);
 	/* border-radius: var(--border-radius); */
 	border-color: var(--accent);
@@ -97,11 +97,18 @@ input {
 	overflow: auto;
 	resize: none;
 	scroll-snap-type: y mandatory;
-	scroll-snap-points-y: repeat(100%);
 }
 
 input:not(:last-child) {
 	margin-bottom: .25em;
+}
+
+input:user-invalid {
+	border-color: var(--error);
+}
+
+input:user-valid {
+	border-color: var(--success);
 }
 
 input[disabled] {
@@ -167,7 +174,6 @@ input[type="text"] {
 	text-shadow: none;
 	text-rendering: auto;
 	text-size-adjust: auto;
-	text-stroke: none;
 	overflow: auto;
 }
 

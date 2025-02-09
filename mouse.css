@@ -1,4 +1,8 @@
 @media (any-hover: hover) {
+	:hover {
+		transition-duration: 100ms;
+	}
+
 	button:hover {
 		border-style: inset;
 		background-color: var(--shadow);
@@ -16,7 +20,7 @@
 	select:hover {
 		outline-color: var(--accent);
 		outline-style: solid;
-		outline-width: 3px;
+		outline-width: 2px;
 	}
 
 	details:hover:not([open]) {

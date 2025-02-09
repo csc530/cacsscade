@@ -1,19 +1,19 @@
 @media screen and (prefers-color-scheme: dark) {
-    :root {
-        /* context */
-        --accent: var(--white);
+	:root {
+		/* context */
+		--accent: var(--white);
 
-        --text: var(--white-smoke);
-        --background: var(--ninja);
+		--text: var(--white-smoke);
+		--background: var(--ninja);
 
-        --danger: var(--blood-red);
-        --warning: var(--dark-goldenrod);
-        --success: var(--viridian);
-        --info: var(--blue-ncs);
+		--danger: var(--blood-red);
+		--warning: var(--dark-goldenrod);
+		--success: var(--viridian);
+		--info: var(--blue-ncs);
 
-        --sparkle: var(--cornflower-blue);
-        --shell: var(--pitch-black);
-        --shade: var(--graynum);
-        --shadow: var(--charcoal);
-    }
+		--sparkle: var(--cornflower-blue);
+		--shell: var(--pitch-black);
+		--shade: var(--graynum);
+		--shadow: var(--charcoal);
+	}
 }

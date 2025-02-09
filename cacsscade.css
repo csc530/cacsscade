@@ -2,7 +2,6 @@
 
 @import url("colours.css");
 @import url("base.css");
-
 @import url("./table.css");
 @import url("./inputs.css");
 @import url("media.css");
@@ -15,7 +14,7 @@
 
 html,
 * {
-	transition-timing-function: ease-in-out;
+	/* transition-timing-function: cubic-bezier(); */
 	transition-behavior: smooth;
 	transition-duration: 0.25s;
 }
@@ -23,7 +22,6 @@ html,
 body nav {
 	position: sticky;
 	top: 0;
-
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -31,28 +29,42 @@ body nav {
 	padding: 0.5em;
 	background-color: var(--shell);
 	border-bottom: 1px solid var(--shadow);
-
 	border-radius: var(--border-radius);
 }
 
 body nav ul {
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	justify-content: space-evenly;
 	width: 100%;
-
-	/* gap: 10em; */
 }
 
-body nav ul li {
+body nav menu {
+	display: flex;
+	flex-flow: column wrap;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+body nav ul li,
+body nav menu li {
 	margin: 0;
 	padding: 0;
 	flex-grow: 1;
 	flex-shrink: 1;
 	text-align: center;
+}
+
+body nav ul li::before,
+body nav ul li::after {
+	content: " | ";
+	margin: auto;
 }
 
 button {
@@ -61,29 +73,21 @@ button {
 	height: 100%;
 	max-height: 100vh;
 	padding: calc(1em / 1.5) calc(1em * 1.75);
-
 	cursor: pointer;
-
 	border-style: outset;
 	border-width: .15em;
 	color: var(--text);
-
 	border-radius: 99999999px;
 	border-color: var(--accent);
-
-	outline-style: none;
-	outline-color: transparent;
-	outline-width: 0;
-
+	outline: transparent none 0;
 	background-color: var(--shell);
 }
 
 button:focus {
 	/* background-color: var(--shade); */
+
 	/* border-color: var(--primary); */
-	outline-color: var(--primary);
-	outline-style: solid;
-	outline-width: 3px;
+	outline: var(--primary) solid 3px;
 }
 
 dialog[open]::backdrop {
@@ -94,7 +98,7 @@ dialog[open]::backdrop {
 	top: 0;
 	left: 0;
 	z-index: 10;
-	background-color: rgba(0, 0, 0, 75%);
+	background-color: rgb(0 0 0 / 75%);
 }
 
 dialog {
@@ -109,5 +113,6 @@ body {
 	background-color: var(--background);
 	color: var(--text);
 	scrollbar-color: var(--shadow) var(--shell);
-	overflow-x: hidden;
+	overflow: hidden auto;
+	box-sizing: border-box;
 }

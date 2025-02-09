@@ -16,12 +16,12 @@
                     just rampantly scrolling through and <em>seeing</em> how everyhting looks🤷🏿</small></p>
 
             <nav>
-                <ul>
+                <menu>
                     <li><a href="#">CaCSScade</a></li>
                     <li><a href="tacit.html">Tacit</a></li>
                     <li><a href="concrete.html">Concrete</a>
                     </li>
-                </ul>
+                </menu>
             </nav>
         </header>
         <main>
@@ -47,13 +47,28 @@
                         language for creating webpages.</p>
                     <p>While <dfn id="ccsscd">CaCSScade</dfn> is a CSS framework library made to make <abbr>HTML</abbr>
                         look good.</p>
+
+                    <pre><code lang="css">
+code::before{
+    content: attr(lang);
+    color: var(--text);
+    background-color: var(--shade);
+    font-size: 0.5em;
+    font-weight: bold;
+}</code>
+<small>TIP: highlight codeblocks with <a href="https://highlightjs.org/">highlight.js</a></small>
+                    </pre>
+
+
                     <blockquote cite="https://www.example.com">
                         <pre>Use a <code>pre</code>
-                            to maintain line breaks
-                            and preservation of pros is a pro.
+to maintain line breaks
+and preservation of prose structure.
+This is pro.
 
-                            - <a href="http://github.com/csc530"> CSC530</a>
+- <a href="http://github.com/csc530">CSC530</a>
                         </pre>
+
                     </blockquote>
                     <q cite="https://www.example.com"><kbd>Alt</kbd>
                         + <kbd>F4</kbd> make your computer go brrrr. - CSC530</q>
@@ -100,6 +115,8 @@
             <section>
                 <h2>Tables</h2>
                 <table class="standard-table">
+                    <caption>this is a table's caption; and ironically are <code>display</code> <em>block</em> elemnts
+                        and not table for (<i>what I hope are obviously</i>) stylistic reasons</caption>
                     <thead>
                         <tr>
                             <th scope="row">Abbreviation</th>
