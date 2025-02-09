@@ -352,7 +352,7 @@ textarea {
 	overflow-y: auto;
 	overflow-x: auto;
 
-	vertical-align: baseline;
+	vertical-align: top;
 
 	font-family: inherit;
 	font-size: inherit;

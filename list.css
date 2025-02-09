@@ -25,6 +25,12 @@ dd {
 	margin-inline-start: 1.25em;
 }
 
+menu {
+	width: fit-content;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
 @counter-style unordered {
 	system: cyclic;
 	symbols: "●";
