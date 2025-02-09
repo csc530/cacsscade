@@ -15,16 +15,18 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: oven-sh/setup-bun@v2
+      - uses: actions/setup-node@v4
         with:
-          bun-version: latest
+          node-version: latest
+      # - uses: oven-sh/setup-bun@v2
+      #   with:
+      #     bun-version: latest
 
       - name: Install dependencies
-        run: bun install
+        run: npm install
 
       - name: Bundle
-        run: bun run lightningcss --bundle --minify cacsscade.css --output-file cacsscade.min.css
-
+        run: npm run lightningcss --bundle --minify cacsscade.css --output-file cacsscade.min.css
       - uses: actions/upload-artifact@v4 # upload the bundle
         with:
           name: cacsscade.min.css
