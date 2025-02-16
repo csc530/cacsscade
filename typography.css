@@ -45,8 +45,17 @@ pre {
 }
 
 code {
-	display: inline;
+	display: inline-block;
 	font-family: natural-mono, monospace;
+
+
+	box-sizing: border-box;
+	vertical-align: baseline;
+	vertical-align: -webkit-baseline-middle;
+
+
+	width: fit-content;
+	max-width: 100%;
 
 	background-color: var(--shade);
 	border-radius: var(--border-radius);

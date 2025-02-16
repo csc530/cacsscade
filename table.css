@@ -53,6 +53,8 @@ table caption {
 	caption-side: top;
 	text-align: center;
 	text-transform: capitalize;
+
+	margin: 0.45em auto;
 }
 
 thead,
@@ -88,7 +90,6 @@ th[scope="col"],
 th[scope="colgroup"] {
 	max-width: 100%;
 	top: 0;
-	bottom: 100%;
 	z-index: 1;
 	position: sticky;
 }
@@ -97,7 +98,6 @@ th[scope="row"],
 th[scope="rowgroup"] {
 	max-width: 100%;
 	left: 0;
-	right: 100%;
 	z-index: 1;
 	position: sticky;
 }
