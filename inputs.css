@@ -28,16 +28,16 @@ label {
 	row-gap: .25em;
 
 	flex-shrink: 1;
+
+	box-sizing: border-box;
 }
 
-label:not(:last-child) {
-	margin-bottom: .25em;
-}
-
-label:has(select),
-label:has(textarea),
-label:has(input) {
+label:has(:is(select, textarea, input)) {
 	width: 100%;
+
+	margin: .35em 0;
+
+	box-sizing: content-box;
 }
 
 label:has(input[type="radio"]),
@@ -65,6 +65,8 @@ input {
 	vertical-align: middle;
 
 	margin: auto 0;
+
+	box-sizing: border-box;
 
 	min-height: 1em;
 	height: 100%;
@@ -125,8 +127,7 @@ input[type="hidden"] {
 	visibility: hidden;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-}
+input[type="date"]::-webkit-calendar-picker-indicator {}
 
 input[type="button"],
 input[type="submit"],
@@ -238,6 +239,7 @@ input[type="color"]::-ms-color-swatch {
 	height: 100%;
 }
 
+/* FIX: inaccessible range in safari */
 input[type="range"] {
 	cursor: pointer;
 	border-radius: 12;
@@ -246,29 +248,21 @@ input[type="range"] {
 	overflow: hidden;
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
-}
+input[type="range"]::-webkit-slider-runnable-track {}
 
-input[type="range"]::-webkit-slider-thumb {
-}
+input[type="range"]::-webkit-slider-thumb {}
 
-input[type="range"]::-moz-range-track {
-}
+input[type="range"]::-moz-range-track {}
 
-input[type="range"]::-moz-range-thumb {
-}
+input[type="range"]::-moz-range-thumb {}
 
-input[type="range"]::-ms-track {
-}
+input[type="range"]::-ms-track {}
 
-input[type="range"]::-ms-thumb {
-}
+input[type="range"]::-ms-thumb {}
 
-input[type="range"]::-ms-fill-lower {
-}
+input[type="range"]::-ms-fill-lower {}
 
-input[type="range"]::-ms-fill-upper {
-}
+input[type="range"]::-ms-fill-upper {}
 
 input[type="file"] {
 	cursor: pointer;
@@ -375,3 +369,13 @@ textarea {
 	height: 100%;
 	max-height: 100%;
 }
+
+
+/* vertical spacing of inputs */
+/* input, select, textarea,
+label:has(+ :is(input,textarea,select)), :is(input,textarea,select) + label
+{
+	margin-top: .25em;
+	margin-bottom: .25em;
+
+} */

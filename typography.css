@@ -108,16 +108,6 @@ pre {
 	word-break: auto-phrase;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	text-align: justify;
-	text-wrap: balance;
-	font-family: sugar, corbert;
-}
 
 article > h1,
 article > h2,
@@ -161,6 +151,10 @@ h5,
 h6 {
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
+
+	text-align: justify;
+	text-wrap: balance;
+	font-family: em-one, antiqua, sugar, corbert;
 }
 
 h1 {
@@ -218,7 +212,7 @@ q {
 blockquote,
 q {
 	font-style: italic;
-	font-family: tess;
+	font-family: tess, antiqua;
 	font-weight: normal;
 }
 

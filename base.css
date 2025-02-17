@@ -73,14 +73,34 @@
 }
 
 @font-face {
+	font-family: old-timer;
+	src: url("fonts/oldtimer/Oldtimer.ttf" );
+}
+
+@font-face {
+	font-family: golem;
+	src: url("fonts/Golem.ttf");
+}
+
+@font-face {
+	font-family: antiqua;
+	src: url("fonts/modern_antiqua/ModernAntiqua-Book.ttf");
+}
+
+@font-face {
+	font-family: fairytale;
+	src: url("fonts/fairytale_2/Fairytale3DStylish.ttf");
+}
+
+@font-face {
+	font-family: em-one;
+	src: url("fonts/em_one/EmOne-SemiBold.otf");
+}
+
+@font-face {
 	font-family: wonderland;
 	src: url("fonts/WONDERLANDPRO-Regular.ttf");
 }
-
-/* resouerces
-
-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-*/
 
 progress,
 meter {
