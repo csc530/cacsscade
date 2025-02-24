@@ -14,7 +14,7 @@
             <h1 title="I'm an h1">Comprehensive HTML Tag Test</h1>
             <p>So here we have a header with a navigation bar below. And you can expect more <code>p</code> snippets
                 throughout the page explaining elements, styling, and behaviours😉.<small>If you're even reading and not
-                    just rampantly scrolling through and <em>seeing</em> how everyhting looks🤷🏿</small></p>
+                    just rampantly scrolling through and <em>seeing</em> how everything looks🤷🏿</small></p>
 
             <nav>
                 <menu>
@@ -74,11 +74,11 @@ This is pro.
                     <q cite="https://www.example.com"><kbd>Alt</kbd>
                         + <kbd>F4</kbd> make your computer go brrrr. - CSC530</q>
                     <address>
-                        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+                        Written by <a href="mailto:webmaster@example.com">csc530</a>.<br>
                         Visit us at:<br>
-                        Example.com<br>
-                        Box 564, Disneyland<br>
-                        USA
+                        cacssade.ca<br>
+                        Box 564, File Island<br>
+                        Digital World
                     </address>
                     <time datetime="2024-09-07">September 7, 2024</time>
                 </section>
@@ -93,6 +93,9 @@ This is pro.
                                 <li>
                                     <ol>
                                         <li>with even more lists :)</li>
+                                        <li>🙈</li>
+                                        <li>🙉</li>
+                                        <li>🙊</li>
                                     </ol>
                                 </li>
                             </ul>
@@ -108,7 +111,7 @@ This is pro.
                         <dt>Definition Term 1</dt>
                         <dd>Definition Description 1</dd>
                         <dt>Definition lists</dt>
-                        <dd>a niche and ununsed HTML tags for defining terms, concepts, or phrases (glossary)</dd>
+                        <dd>a niche and unused HTML tags for defining terms, concepts, or phrases (glossary)</dd>
                     </dl>
 
                     <menu>
@@ -123,7 +126,7 @@ This is pro.
             <section>
                 <h2>Tables</h2>
                 <table>
-                    <caption>this is a table's caption; and ironically are <code>display</code> <em>block</em> elemnts
+                    <caption>this is a table's caption; and ironically are <code>display</code> <em>block</em> elements
                         and not table for (<i>what I hope are obviously</i>) stylistic reasons</caption>
                     <thead>
                         <tr>
@@ -280,8 +283,8 @@ This is pro.
                     </label>
                     <input type="file" id="file" name="file">
                     <br>
-                    <label for="nested">Label:
-                        <input type="text" id="nested" value="input nested in label are fullwidth, block" readonly>
+                    <label>Label:
+                        <input type="text" id="nested" value="input nested in label are full-width, block" readonly>
                     </label>
 
                     <fieldset>
@@ -314,7 +317,7 @@ This is pro.
                     </select>
                     <br>
 
-                    <label for="faction">Nested select:
+                    <label>Nested select:
                         <select id="faction" name="faction">
                             <option value="horde" selected disabled>Can't choose me</option>
                             <option value="alliance">full width option</option>
@@ -341,7 +344,7 @@ This is pro.
                     <textarea placeholder="" id="bio" name="bio"></textarea>
                     <br>
 
-                    <label for="comments">Nested textarea:
+                    <label>Nested textarea:
                         <textarea id="comments"
                             placeholder="the non-nested inputs have been separated with <br> tags, thank you!"
                             name="comments"></textarea>
@@ -374,11 +377,11 @@ This is pro.
                     <input type="time" id="time" name="time">
                     <br>
                     <label for="datetime">Datetime:</label>
-                    <input disabled id="datetime" name="datetime">
+                    <!-- <input disabled id="datetime" type="datetime"> -->
                     <br>
 
-                    <input readonly value="readonly input.">
-                    <input disabled value="disabled input.">
+                    <input readonly value="readonly input." type="text">
+                    <input disabled value="disabled input." type="search" >
                     <input type="hidden" value="hidden input.">
 
 
@@ -488,11 +491,11 @@ This is pro.
                     <summary>More Info</summary>
                     <p>This is additional information.</p>
                 </details>
-                <button type="button" onclick="document.getElementById('dialog').showModal();">Click Me</button>
+                <button type="button" onclick="document.getElementById('dialog').showModal();">Open dialog</button>
                 <dialog id="dialog" onclick="this.close();">
                     <p>This is a dialog box.</p>
                 </dialog>
-                <meter value="0" min="0" max="100" optimum="80" low="33" high="66">60%</meter>
+                <meter value="0" min="0" max="100" optimum="80" low="33" high="66" title="I'm utilizing the &QUOT;high&QUOT;, &QUOT;low&QUOT;, and &QUOT;optimum&QUOT; attributes">60%</meter>
                 <script>
                     var meters = document.querySelectorAll('meter');
                     meters.forEach(function(meter)

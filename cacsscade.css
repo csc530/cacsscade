@@ -116,3 +116,11 @@ body {
 	overflow: hidden auto;
 	box-sizing: border-box;
 }
+
+header,footer {
+	margin: 2em 1em;
+}
+
+footer {
+	border-top: 1px solid var(--shadow);
+}

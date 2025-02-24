@@ -1,6 +1,8 @@
-dl {
-	width: fit-content;
+dl,ul,ol,menu {
 	list-style-position: inside;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	padding-inline-start: 1.2em;
 }
 
 dt {
@@ -26,10 +28,9 @@ dd {
 }
 
 menu {
-	width: fit-content;
 	list-style-type: square;
-	list-style-position: inside;
 }
+
 
 @counter-style unordered {
 	system: cyclic;
