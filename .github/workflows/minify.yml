@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Bundle
-        run: npm run lightningcss --bundle --minify cacsscade.css --output-file cacsscade.min.css
+        run: npx lightningcss --bundle --minify cacsscade.css --output-file cacsscade.min.css
 
 
       - name: Push changes
